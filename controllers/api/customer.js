@@ -93,7 +93,7 @@ customerRouter.post('/login', async (req, res) => {
         const { email, password } = req.body;
         // This will be replaced by Customer.findOne({ where: { email: req.body.email } })
         const customer = await Promise.resolve(existingCustomers.find(customer => customer.email === email));
-        console.log(customer);
+        
         if (customer && (await customer.comparePasswords(password))) {
             req.session.user_id = customer.id;
             req.session.logged_in = true;
@@ -105,5 +105,18 @@ customerRouter.post('/login', async (req, res) => {
         res.status(400).json({ message: err.message });
     }
 });
+
+customerRouter.post('/logout', async (req, res) => {
+    try {
+        if (res.session.logged_in) {
+            res.session.destroy();
+            res.redirect('/');
+        } else {
+            res.status(400).json('No user was logged in');
+        }
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+})
 
 module.exports = customerRouter;
