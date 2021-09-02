@@ -1,6 +1,5 @@
 const customerRouter = require('express').Router();
 const bcrypt = require('bcrypt');
-const { create } = require('express-handlebars');
 
 // !* DELETE BELOW WHEN CUSTOMER MODEL IS CREATED *!
 
@@ -12,15 +11,15 @@ class Customer {
         this.first_name = opts.first_name;
         this.last_name = opts.last_name;
         this.email = opts.email;
-        this.createPasswordHash(opts.password);
+        this.password = this.createPasswordHash(opts.password);
     }
 
-    async createPasswordHash(password) {
-        this.password = await bcrypt.hash(password, 10);
+    createPasswordHash(password) {
+        return bcrypt.hashSync(password, 10);
     }
 
     async comparePasswords(password) {
-        return bcrypt.compare(password, this.password);
+        return await bcrypt.compare(password, this.password);
     }
 
     get() {
@@ -57,12 +56,14 @@ const existingCustomers = [
     })
 ];
 
+
+
 // !* DELETE ABOVE WHEN CUSTOMER MODEL IS CREATED *!
 
 customerRouter.post('/register', async (req, res) => {
     try {
         // Replace promise with Customer.create
-        const customerData = await new Promise((resolve, reject) => {
+        const customer = await new Promise((resolve, reject) => {
             // All the code within these curly brackets can be deleted when the model is used.
             // It's just being used to replicate the behavior of registering a customer.
             if (existingCustomers.some(customer => customer.email === req.body.email)) {
@@ -77,13 +78,29 @@ customerRouter.post('/register', async (req, res) => {
             throw err;
         });
 
-        const customer = customerData.get();
-        console.log(existingCustomers.map(customer => customer.get()));
         req.session.save(() => {
             req.session.customer_id = customer.id;
             req.session.logged_in = true;
             res.json(customer);
         });
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+});
+
+customerRouter.post('/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        // This will be replaced by Customer.findOne({ where: { email: req.body.email } })
+        const customer = await Promise.resolve(existingCustomers.find(customer => customer.email === email));
+        console.log(customer);
+        if (customer && (await customer.comparePasswords(password))) {
+            req.session.user_id = customer.id;
+            req.session.logged_in = true;
+            res.json(customer);
+        } else {
+            res.status(400).json({ message: "Email or password do not match" });
+        }
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
