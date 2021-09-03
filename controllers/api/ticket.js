@@ -57,6 +57,7 @@ const existingFlights = [
 
 ticketRouter.post('/book', withAuth, async (req, res) => {
     try {
+        // Replace with Ticket.create
         const ticket = await Promise.resolve(
             new Ticket({
                 ...req.body,
@@ -65,6 +66,28 @@ ticketRouter.post('/book', withAuth, async (req, res) => {
         );
         bookedTickets.push(ticket);
         res.json(ticket);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+});
+
+ticketRouter.put('/update-flight/:id', withAuth, async (req, res) => {
+    try {
+        const id = req.params.id - 1;
+        // Replace with Ticket.findByPk
+        const ticket = bookedTickets[id];
+
+        if (ticket.customer_id === req.session.customer_id) {
+            const { flight_id } = req.body;
+            // Replace with Ticket.update
+            bookedTickets[id] = {
+                ...bookedTickets[id],
+                flight_id
+            }
+            res.json({ message: 'Ticket has successfully been updated with new flight' });
+        } else {
+            res.status(401).json({ message: 'Unauthorized action' });
+        }
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
