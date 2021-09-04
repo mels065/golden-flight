@@ -23,13 +23,6 @@ airport.init(
             type: DataTypes.STRING,
             allownull: false,
         },
-        Flight_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'flight',
-                key: 'id',
-            },
-        },
     },
     {
         sequelize,
