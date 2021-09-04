@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 const ticketRouter = require('express').Router();
 
 const withAuth = require('../../utils/with-auth');
@@ -46,14 +48,59 @@ const existingCustomers = [
     { id: 6 }
 ];
 
+const today = moment();
 const existingFlights = [
+    {
+        id: 1,
+        departingTime: today.add(1, 'day').hour(12).minute(20),
+        arrivalTime: today.add(1, 'day').hour(14).minute(10),
+        departingAiportId: 1,
+        arrivingAirportId: 3
+    },
+    {
+        id: 2,
+        departingTime: today.add(1, 'day').hour(12).minute(20),
+        arrivalTime: today.add(1, 'day').hour(14).minute(10),
+        departingAiportId: 2,
+        arrivingAirportId: 5
+    },
+    {
+        id: 3,
+        departingTime: today.add(1, 'day').hour(12).minute(20),
+        arrivalTime: today.add(1, 'day').hour(14).minute(10),
+        departingAiportId: 3,
+        arrivingAirportId: 2
+    },
+    {
+        id: 4,
+        departingTime: today.add(1, 'day').hour(12).minute(20),
+        arrivalTime: today.add(1, 'day').hour(14).minute(10),
+        departingAiportId: 4,
+        arrivingAirportId: 1
+    },
+    {
+        id: 5,
+        departingTime: today.add(1, 'day').hour(12).minute(20),
+        arrivalTime: today.add(1, 'day').hour(14).minute(10),
+        departingAiportId: 1,
+        arrivingAirportId: 3
+    },
+    {
+        id: 6,
+        departingTime: today.add(2, 'day').hour(14).minute(0),
+        arrivalTime: today.add(2, 'day').hour(15).minute(50),
+        departingAiportId: 2,
+        arrivingAirportId: 5
+    },
+];
+
+const airports = [
     { id: 1 },
     { id: 2 },
     { id: 3 },
     { id: 4 },
     { id: 5 },
-    { id: 6 }
-];
+]
 
 /* DELETE ABOVE */
 
