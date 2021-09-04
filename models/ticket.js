@@ -11,6 +11,10 @@ ticket.init(
             primarykey: true,
             autoincrement: true,
         },
+        Roundtrip: {
+            type: DataTypes.BOOLEAN,
+            allownull: false,
+        },
         OrderDate: {
             type: DataTypes.DATE,
             allownull: false,
