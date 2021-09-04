@@ -43,7 +43,7 @@ customer.init(
         },
         Address2: {
             type: DataTypes.STRING,
-            allownull: false,
+            allownull: true,
         },
         City: {
             type: DataTypes.STRING,
@@ -61,6 +61,17 @@ customer.init(
             type: DataTypes.STRING,
             allownull: false,
         },
+    },
+    {
+        hooks: {
+            beforeCreate: async (newcustomerData) => {
+              newcustomerData.password = await bcrypt.hash(newcustomerData.password, 10);
+              return newcustomerData;
+            },
+            beforeUpdate: async (updatedcustomerData) => {
+              updatedcustomerData.password = await bcrypt.hash(updatedcustomerData.password, 10);
+              return updatedcustomerData;
+            },
     },
     {
         sequelize,
