@@ -1,0 +1,17 @@
+[
+    {
+        "Airport": "DTW",
+        "AP_City": "Detroit, MI",
+        "AP_country": "United states of America" 
+    },
+    {
+        "Airport": "DIA",
+        "AP_City": "Denver, CO",
+        "AP_country": "United states of America" 
+    },
+    {
+        "Airport": "SLC",
+        "AP_City": "Salt Lake City, UT",
+        "AP_country": "United states of America" 
+    }
+]

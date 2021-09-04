@@ -1,0 +1,41 @@
+[
+    {
+        "UserName": "chandresflight",
+        "Password": "password54321",
+        "FirstName": "Andres",
+        "LastName": "chance",
+        "Phone": "5567844433",
+        "Address1": "453 Washington ave",
+        "Address2": "",
+        "City": "Dallas",
+        "State": "Texas",
+        "Postalcode": "75061",
+        "Country": "United Sates of America"
+    },
+    {
+        "UserName": "smkevflight",
+        "Password": "password12345",
+        "FirstName": "Kevin",
+        "LastName": "smith",
+        "Phone": "6735558973",
+        "Address1": "1013 NW 108th st",
+        "Address2": "",
+        "City": "Seattle",
+        "State": "Washington",
+        "Postalcode": "98125",
+        "Country": "United Sates of America"
+    },
+    {
+        "UserName": "dureliasflight",
+        "Password": "password67891",
+        "FirstName": "Elias",
+        "LastName": "duran",
+        "Phone": "3895662239",
+        "Address1": "332 Cresta Vista Dr",
+        "Address2": "",
+        "City": "San Francisco",
+        "State": "California",
+        "Postalcode": "94127",
+        "Country": "United Sates of America"
+    }
+]
