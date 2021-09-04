@@ -95,7 +95,7 @@ customerRouter.post('/login', async (req, res) => {
         const customer = await Promise.resolve(existingCustomers.find(customer => customer.email === email));
         
         if (customer && (await customer.comparePasswords(password))) {
-            req.session.user_id = customer.id;
+            req.session.customer_id = customer.id;
             req.session.logged_in = true;
             res.json(customer);
         } else {
