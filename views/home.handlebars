@@ -2,14 +2,41 @@
     <div class="circular--portrait" ><img src="img/airplane.png" alt="airplane"></div>
     <h1>Golden Flights</h1>
 </header>
-<div class="bg-image">
-  <img src="img/light-plane.png" class="w-100" />
-  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
- </div>
-</div>
-<form class="login" type="text" action="" method="post">
+<form action="">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
+        <label class="form-check-label" for="gridRadios2">
+          Roundtrip
+        </label>
+      </div>
+<div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+        <label class="form-check-label" for="gridRadios1">
+          One way
+        </label>
+      </div>
+          <select id="class-type">
+        <option>Economy</option>
+        <option>Premium economy</option>
+        <option>Business class</option>
+        <option>First Class</option>
+      </select>
 
-<input type="text" name="" placeholder="Username"><br>
-<input type="password" name="" placeholder="Password"><br>
-<input type="submit" name="" value="Log In">
-</form>
+   <label for="travelers">Travelers</label>
+    <select name="travelers" id="travelers">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+<div class="ui-widget">
+  <label for="tags">Leaving from</label>
+  <input id="tags">
+</div>
+<div class="ui-widget">
+  <label for="tags">Going to</label>
+  <input id="tags2">
+</div>
+<p>Departing <input type="text" id="datepicker"></p>
+ <input type="submit" name="" value="Search">
+    </form>
