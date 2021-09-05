@@ -7,6 +7,10 @@ const router = express.Router();
 router.use('/api', apiRouter);
 
 router.get('/', (req, res) => {
+    res.render('login');
+});
+
+router.post('/home', (req, res) => {
     res.render('home');
 });
 
