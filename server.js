@@ -8,6 +8,7 @@ const router = require('./controllers');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const helpers = require('./utils/helpers');
+const populateFlights = require('./utils/populate-flights');
 
 async function init() {
     const app = express();
@@ -38,8 +39,9 @@ async function init() {
 
     try {
         await sequelize.sync({ force: false });
-        app.listen(PORT, () => {
+        app.listen(PORT, async () => {
             console.log(`Server listening on port ${PORT}`);
+            setInterval(populateFlights, 1000 * 60 * 60 * 24);
         });
     } catch (err) {
         console.error(err);
