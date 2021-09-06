@@ -11,11 +11,18 @@ router.get('/', (req, res) => {
     res.render('login');
 });
 
-router.post('/home', (req, res) => {
+router.get('/search', (req, res) => {
 
     console.log(req.session);
 
-    res.render('home');
+    res.render('search');
+});
+
+router.get('/results', (req, res) => {
+
+    console.log(req.session);
+
+    res.render('results');
 });
 
 module.exports = router;
