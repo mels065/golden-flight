@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('/search', withAuth, async (req, res) => {
+router.get('/home', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       const customerData = await Customer.findByPk(req.session.user_id, {
@@ -23,9 +23,29 @@ router.get('/search', withAuth, async (req, res) => {
   
       const customer = customerData.get({ plain: true });
   
-      res.render('search', {
+      res.render('home', {
         ...customer,
         logged_in: true
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+  router.get('/search', withAuth, async (req, res) => {
+    try {
+      // Find the logged in user based on the session ID
+      const flightData = await flight.findAll({
+        where: {
+          departingAP: req.body.departingAP,
+          arrivingAP: req.body.arrivingAP,
+        }
+      });
+  
+      const flight = flightData.get({ plain: true });
+  
+      res.render('search', {
+        ...flight
       });
     } catch (err) {
       res.status(500).json(err);
