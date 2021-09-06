@@ -6,6 +6,8 @@ const router = express.Router();
 
 const withAuth = require('../utils/with-auth');
 
+
+
 router.use('/api', apiRouter);
 
 router.get('/', (req, res) => {
@@ -17,7 +19,7 @@ router.get('/', (req, res) => {
 router.get('/home', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
-      const customerData = await Customer.findByPk(req.session.user_id, {
+      const customerData = await customer.findByPk(req.session.user_id, {
         attributes: { exclude: ['password'] },
       });
   
@@ -39,7 +41,10 @@ router.get('/home', withAuth, async (req, res) => {
         where: {
           departingAP: req.body.departingAP,
           arrivingAP: req.body.arrivingAP,
-        }
+          departureDate: req.body.departureDate,
+          
+        },
+        include: [{ model: airport }],
       });
   
       const flight = flightData.get({ plain: true });
