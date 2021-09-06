@@ -4,6 +4,8 @@ const apiRouter = require('./api');
 
 const router = express.Router();
 
+const withAuth = require('../utils/with-auth');
+
 router.use('/api', apiRouter);
 
 router.get('/', (req, res) => {
