@@ -64,4 +64,9 @@ router.get('/results', (req, res) => {
     res.render('results');
 });
 
+router.get('/traveler', (req, res) => {
+
+  res.render('traveler');
+});
+
 module.exports = router;
