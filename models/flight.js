@@ -18,7 +18,7 @@ flight.init(
         DepartingDate: {
             type: DataTypes.DATE,
             allownull: false,
-        },
+        }, 
         Ticket_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -26,14 +26,14 @@ flight.init(
                 Key: 'id',
             },
         },
-        DepartingAP_id: {
+        Origin_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'airport',
                 key: 'id',
             },
         },
-        ArrivingAP_id: {
+        Destination_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'airport',
