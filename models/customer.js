@@ -3,8 +3,10 @@ const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
 class Customer extends Model {
-    checkPassword(loginPw) {
-        return bcrypt.compareSync(loginPw, this.Password);
+    async checkPassword(loginPw) {
+        console.log(loginPw);
+        console.log(this);
+        return await bcrypt.compare(loginPw, this.password);
     }
 }
 
@@ -19,6 +21,7 @@ Customer.init(
         email: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique: true
         },
         password: {
             type: DataTypes.STRING,
@@ -31,11 +34,11 @@ Customer.init(
     },
     {
         hooks: {
-            beforeCreate: async (newcustomerData) => {
+            async beforeCreate(newcustomerData) {
               newcustomerData.password = await bcrypt.hash(newcustomerData.password, 10);
               return newcustomerData;
             },
-            beforeUpdate: async (updatedcustomerData) => {
+            async beforeUpdate(updatedcustomerData) {
               updatedcustomerData.password = await bcrypt.hash(updatedcustomerData.password, 10);
               return updatedcustomerData;
             },
