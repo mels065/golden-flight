@@ -32,6 +32,10 @@ Flight.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        price: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
        
         airliner_id: {
             type: DataTypes.INTEGER,
