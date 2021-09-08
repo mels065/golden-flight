@@ -1,9 +1,11 @@
 [
     {
-        "departingDate": "3/4/2021",
-        "takeOffTime": "3/9/2021",
-        "landingTime": "3/9/2021",
-        "airliner_id": "3/9/2021"
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit",
+        "arrivingCity": "Chicago",
+        "takeOffTime": "8:00AM",
+        "landingTime": "12:00PM",
+        "airliner_id": "1"
     }
     
 ]
