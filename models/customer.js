@@ -16,9 +16,16 @@ Customer.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
+            validate: {
+                isEmail: true,
+            }
         },
         password: {
             type: DataTypes.STRING,
@@ -39,7 +46,10 @@ Customer.init(
               updatedcustomerData.password = await bcrypt.hash(updatedcustomerData.password, 10);
               return updatedcustomerData;
             },
-    },
+        
+        },
+
+
     
         sequelize,
         timestamp: false,
