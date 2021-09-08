@@ -1,66 +1,33 @@
 const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
+const bcrypt = require('bcrypt');
 
-class customer extends Model {}
+class Customer extends Model {
+    checkPassword(loginPw) {
+        return bcrypt.compareSync(loginPw, this.Password);
+    }
+}
 
-customer.init(
+Customer.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            allownull: false,
-            primarykey: true,
+            allowNull: false,
+            primaryKey: true,
             autoIncrement: true,
         },
-        UserName: {
+        email: {
             type: DataTypes.STRING,
-            allownull: false,
+            allowNull: false,
         },
-        Password: {
+        password: {
             type: DataTypes.STRING,
-            allownull: false,
+            allowNull: false,
             validate: {
                 len: [8],
             },
         },
-        FirstName: {
-            type: DataTypes.STRING,
-            allownull: false,
-        },
-        LastName: {
-            type: DataTypes.STRING,
-            allownull: false,
-        },
-        Phone: {
-            type: DataTypes.INTEGER,
-            allownull: false,
-            validate: {
-                len: [9],
-            },
-        },
-        Address1: {
-            type: DataTypes.STRING,
-            allownull: false,
-        },
-        Address2: {
-            type: DataTypes.STRING,
-            allownull: true,
-        },
-        City: {
-            type: DataTypes.STRING,
-            allownull: false,
-        },
-        State: {
-            type: DataTypes.STRING,
-            allownull: false,
-        },
-        Postalcode: {
-            type: DataTypes.INTEGER,
-            allownull: false,
-        },
-        Country: {
-            type: DataTypes.STRING,
-            allownull: false,
-        },
+        
     },
     {
         hooks: {
@@ -73,13 +40,13 @@ customer.init(
               return updatedcustomerData;
             },
     },
-    {
+    
         sequelize,
         timestamp: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'customer',
+        modelName: 'Customer',
     }
 );
 
-module.exports = customer;
+module.exports = Customer;

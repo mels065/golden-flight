@@ -1,12 +1,9 @@
 const express = require('express');
-
 const apiRouter = require('./api');
-
 const router = express.Router();
-
 const withAuth = require('../utils/with-auth');
 
-
+const { customer, ticket, flight, airport, passangers } = require('../models');
 
 router.use('/api', apiRouter);
 
@@ -19,10 +16,12 @@ router.get('/', (req, res) => {
 router.get('/home', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
+      console.log('in');
       const customerData = await customer.findByPk(req.session.user_id, {
+        
         attributes: { exclude: ['password'] },
       });
-  
+      console.log(customerData);
       const customer = customerData.get({ plain: true });
   
       res.render('home', {
@@ -34,7 +33,7 @@ router.get('/home', withAuth, async (req, res) => {
     }
   });
 
-  router.get('/search', withAuth, async (req, res) => {
+  router.get('/results', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       const flightData = await flight.findAll({
@@ -49,7 +48,7 @@ router.get('/home', withAuth, async (req, res) => {
   
       const flight = flightData.get({ plain: true });
   
-      res.render('search', {
+      res.render('results', {
         ...flight
       });
     } catch (err) {
@@ -57,16 +56,5 @@ router.get('/home', withAuth, async (req, res) => {
     }
   });
 
-router.get('/results', (req, res) => {
-
-    console.log(req.session);
-
-    res.render('results');
-});
-
-router.get('/traveler', (req, res) => {
-
-  res.render('traveler');
-});
 
 module.exports = router;

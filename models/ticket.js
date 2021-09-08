@@ -1,45 +1,34 @@
 const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 
-class ticket extends Model {}
+class Ticket extends Model {}
 
-ticket.init(
+Ticket.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            allownull: false,
-            primarykey: true,
+            allowNull: false,
+            primaryKey: true,
             autoincrement: true,
         },
-        Roundtrip: {
+        roundtrip: {
             type: DataTypes.BOOLEAN,
             allownull: false,
         },
-        OrderDate: {
+        orderDate: {
             type: DataTypes.DATE,
             allownull: false,
             defaultValue: DataTypes.NOW,
         },
-        Baggage: {
+        baggage: {
             type: DataTypes.BOOLEAN,
             allownull: false,
         },
-        Status: {
-            type: DataTypes.BOOLEAN,
-            allownull: false,
-        },
-        Customer_id: {
+        customer_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'customer',
+                model: 'Customer',
                 Key: 'id',
-            },
-        },
-        Flight_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'flight',
-                key: 'id',
             },
         },
     },
@@ -48,8 +37,8 @@ ticket.init(
         timestamp: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'ticket',
+        modelName: 'Ticket',
     }
 );
 
-module.exports = ticket;
+module.exports = Ticket;
