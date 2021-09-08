@@ -1,61 +1,31 @@
-const customer = require('./customer');
-const ticket = require('./ticket');
-const airport = require('./airport');
-const flight = require('./flight');
-const passangers = require('./passangers');
+const Customer = require('./Customer');
+const Ticket = require('./Ticket');
+const Airliner = require('./Airliner');
+const Flight = require('./Flight');
 
-customer.hasMany(ticket, {
-    foreignKey: 'Customer_id',
+Customer.hasMany(Ticket, {
     onDelete: 'CASCADE'
 });
 
-ticket.belongsTo(customer, {
-    foreignKey: 'Customer_id'
-});
+Ticket.belongsTo(Customer);
 
-flight.hasMany(ticket, {
-    foreignKey: 'Flight_id',
-    onDelete: 'CASCADE'
-});
-git 
-ticket.belongsTo(flight, {
-    foreignKey: 'Flight_id'
-});
-
-customer.hasMany(flight, {
-    foreignKey: 'Customer_id',
+Flight.hasMany(Ticket, {
     onDelete: 'CASCADE'
 });
 
-flight.belongsTo(customer, {
-    foreignKey: 'Customer_id'
+Ticket.belongsTo(Flight, {
+    foreignKey: 'flight_id'
 });
 
-flight.hasMany(airport, {
-    foreignKey: 'Flight_id',
+
+Flight.belongsTo(Airliner, {
+    foreignKey: 'airliner_id',
     onDelete: 'CASCADE'
 });
 
-airport.belongsTo(flight, {
-    foreignKey: 'Flight_id'
-});
-
-customer.hasMany(passangers, {
-    foreignKey: 'Customer_id',
+Airliner.hasMany(Flight, {
     onDelete: 'CASCADE'
-});
+})
 
-passangers.belongsTo(customer, {
-    foreignKey: 'Customer_id'
-});
 
-ticket.hasMany(passangers, {
-    foreignKey: 'Ticket_id',
-    onDelete: 'CASCADE'
-});
-
-passangers.belongsTo(ticket, {
-    foreignKey: 'Ticket_id'
-});
-
-module.exports = { customer, ticket, flight, airport, passangers };
+module.exports = { Customer, Ticket, Flight, Airliner };

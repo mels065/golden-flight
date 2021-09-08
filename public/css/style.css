@@ -172,11 +172,15 @@ header h1 {
 }
 
 .results {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .purchase-ticket {
   text-align: center;
+  margin-top: 25px;
+}
+
+.row h2 {
   margin-top: 25px;
 }
 

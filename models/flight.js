@@ -1,42 +1,34 @@
 const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 
-class flight extends Model {}
+class Flight extends Model {}
 
-flight.init(
+Flight.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            allownull: false,
-            primarykey: true,
-            autoincrement: true,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
         },
-        ArrivingDate: {
+
+        departingDate: {
             type: DataTypes.DATE,
-            allownull: false,
+            allowNull: false,
         },
-        DepartingDate: {
-            type: DataTypes.DATE,
-            allownull: false,
+        takeOffTime: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
-        Ticket_id: {
+        landingTime: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+       
+        airliner_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'ticket',
-                Key: 'id',
-            },
-        },
-        DepartingAP_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'airport',
-                key: 'id',
-            },
-        },
-        ArrivingAP_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'airport',
+                model: 'Airliner',
                 key: 'id',
             },
         },
@@ -46,8 +38,8 @@ flight.init(
         timestamp: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'flight',
+        modelName: 'Flight',
     }
 );
 
-module.exports = flight;
+module.exports = Flight;
