@@ -1,15 +1,18 @@
 [
     {
+        "Roundtrip": "no",
         "OrderDate": "2/22/2021",
         "Baggage": "yes",
         "status": "yes"
     },
     {
+        "Roundtrip": "yes",
         "OrderDate": "3/15/2021",
         "Baggage": "yes",
         "status": "yes"
     },
     {
+        "Roundtrip": "no",
         "OrderDate": "3/10/2021",
         "Baggage": "no",
         "status": "yes"

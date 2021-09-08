@@ -66,11 +66,7 @@ Customer.init(
               updatedcustomerData.password = await bcrypt.hash(updatedcustomerData.password, 10);
               return updatedcustomerData;
             },
-        
         },
-
-
-    
         sequelize,
         timestamp: false,
         freezeTableName: true,
