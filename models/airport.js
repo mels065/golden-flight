@@ -11,7 +11,7 @@ airport.init(
             primarykey: true,
             autoincrement: true,
         },
-        Airport: {
+        AirportCode: {
             type: DataTypes.STRING,
             allownull: false,
         },
