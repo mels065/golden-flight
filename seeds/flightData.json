@@ -1,14 +1,1442 @@
 [
     {
-        "ArrivingDate": "3/10/2021",
-        "DepartingDate": "3/9/2021"
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "12:15PM",
+        "price": "$250",
+        "airliner_id": 1
     },
     {
-        "ArrivingDate": "4/1/2021",
-        "DepartingDate": "3/30/2021"
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:00AM",
+        "landingTime": "2:45PM",
+        "price": "$350",
+        "airliner_id": 1
     },
     {
-        "ArrivingDate": "3/27/2021",
-        "DepartingDate": "3/25/2021"
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:30AM",
+        "landingTime": "1:30PM",
+        "price": "$300",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:45AM",
+        "landingTime": "12:30PM",
+        "price": "$275",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "12:00PM",
+        "price": "$313",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "2:45PM",
+        "price": "$365",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:30AM",
+        "landingTime": "1:30PM",
+        "price": "$278",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:45AM",
+        "landingTime": "12:30PM",
+        "price": "$290",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "9:00AM",
+        "landingTime": "2:10PM",
+        "price": "$359",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "3:45PM",
+        "price": "$289",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "2:50PM",
+        "price": "$399",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:50AM",
+        "landingTime": "12:40PM",
+        "price": "$260",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:10AM",
+        "landingTime": "2:20PM",
+        "price": "$305",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "12:45PM",
+        "price": "$275",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "4:30PM",
+        "price": "$405",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:50AM",
+        "landingTime": "1:40PM",
+        "price": "$351",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "1:15PM",
+        "price": "$310",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "12:40PM",
+        "price": "$277",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "2:30PM",
+        "price": "$391",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "6:25AM",
+        "landingTime": "1:30PM",
+        "price": "$290",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:00AM",
+        "landingTime": "12:20PM",
+        "price": "$260",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:10AM",
+        "landingTime": "2:50PM",
+        "price": "$360",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "12:30PM",
+        "price": "$320",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "7:45AM",
+        "landingTime": "1:20PM",
+        "price": "$285",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "7:00AM",
+        "landingTime": "12:30PM",
+        "price": "$325",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:45AM",
+        "landingTime": "1:50PM",
+        "price": "$356",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "12:40PM",
+        "price": "$279",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:30AM",
+        "landingTime": "12:40PM",
+        "price": "$292",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "1:20PM",
+        "price": "$356",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "6:20AM",
+        "landingTime": "2:30PM",
+        "price": "$287",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "3:00PM",
+        "price": "$389",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:00AM",
+        "landingTime": "12:00PM",
+        "price": "$262",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "2:30PM",
+        "price": "$307",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:35AM",
+        "landingTime": "12:00PM",
+        "price": "$272",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:30AM",
+        "landingTime": "3:50PM",
+        "price": "$404",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "7:50AM",
+        "landingTime": "2:20PM",
+        "price": "$342",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "6:15AM",
+        "landingTime": "12:25PM",
+        "price": "$321",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "6:15AM",
+        "landingTime": "12:50PM",
+        "price": "$265",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:30AM",
+        "landingTime": "1:35PM",
+        "price": "$389",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "6:50AM",
+        "landingTime": "1:45PM",
+        "price": "$291",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:10AM",
+        "landingTime": "2:30PM",
+        "price": "$220",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "4:30PM",
+        "price": "$310",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:10AM",
+        "landingTime": "2:35PM",
+        "price": "$310",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "3:00PM",
+        "price": "$270",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "2:50PM",
+        "price": "$301",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "3:45PM",
+        "price": "$325",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "2:20PM",
+        "price": "$265",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "2:35PM",
+        "price": "$281",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "10:10AM",
+        "landingTime": "3:30PM",
+        "price": "$326",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "4:15PM",
+        "price": "$255",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:40AM",
+        "landingTime": "5:20PM",
+        "price": "$374",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "2:35PM",
+        "price": "$231",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "10:15AM",
+        "landingTime": "4:30PM",
+        "price": "$299",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:30AM",
+        "landingTime": "2:15PM",
+        "price": "$288",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "5:40PM",
+        "price": "$379",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:30AM",
+        "landingTime": "4:10PM",
+        "price": "$322",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "2:30PM",
+        "price": "$312",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:25AM",
+        "landingTime": "2:20PM",
+        "price": "$234",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "3:25PM",
+        "price": "$321",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:30AM",
+        "landingTime": "3:50PM",
+        "price": "$287",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "3:25PM",
+        "price": "$205",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "5:45PM",
+        "price": "$298",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "3:45PM",
+        "price": "$299",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:20AM",
+        "landingTime": "4:20PM",
+        "price": "$259",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "9:25AM",
+        "landingTime": "3:45PM",
+        "price": "$290",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "4:50PM",
+        "price": "$312",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "10:00AM",
+        "landingTime": "3:30PM",
+        "price": "$257",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "3:35PM",
+        "price": "$275",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "11:00AM",
+        "landingTime": "4:20PM",
+        "price": "$318",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:20AM",
+        "landingTime": "5:15PM",
+        "price": "$250",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "10:30AM",
+        "landingTime": "6:35PM",
+        "price": "$372",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "3:30PM",
+        "price": "$228",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "11:10AM",
+        "landingTime": "5:30PM",
+        "price": "$279",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "10:10AM",
+        "landingTime": "3:15PM",
+        "price": "$282",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:20AM",
+        "landingTime": "6:50PM",
+        "price": "$371",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "10:10AM",
+        "landingTime": "5:00PM",
+        "price": "$317",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "3:20PM",
+        "price": "$304",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:25AM",
+        "landingTime": "3:20PM",
+        "price": "$229",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:40AM",
+        "landingTime": "4:45PM",
+        "price": "$314",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/12/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:30AM",
+        "landingTime": "4:50PM",
+        "price": "$277",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "12:15PM",
+        "price": "$250",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:00AM",
+        "landingTime": "2:45PM",
+        "price": "$350",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:30AM",
+        "landingTime": "1:30PM",
+        "price": "$300",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:45AM",
+        "landingTime": "12:30PM",
+        "price": "$275",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "12:00PM",
+        "price": "$313",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "2:45PM",
+        "price": "$365",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:30AM",
+        "landingTime": "1:30PM",
+        "price": "$278",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:45AM",
+        "landingTime": "12:30PM",
+        "price": "$290",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "9:00AM",
+        "landingTime": "2:10PM",
+        "price": "$359",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "3:45PM",
+        "price": "$289",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "2:50PM",
+        "price": "$399",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:50AM",
+        "landingTime": "12:40PM",
+        "price": "$260",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:10AM",
+        "landingTime": "2:20PM",
+        "price": "$305",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "12:45PM",
+        "price": "$275",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "4:30PM",
+        "price": "$405",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:50AM",
+        "landingTime": "1:40PM",
+        "price": "$351",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "1:15PM",
+        "price": "$310",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:15AM",
+        "landingTime": "12:40PM",
+        "price": "$277",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "2:30PM",
+        "price": "$391",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "6:25AM",
+        "landingTime": "1:30PM",
+        "price": "$290",
+        "airliner_id": 1
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:00AM",
+        "landingTime": "12:20PM",
+        "price": "$260",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:10AM",
+        "landingTime": "2:50PM",
+        "price": "$360",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "12:30PM",
+        "price": "$320",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "7:45AM",
+        "landingTime": "1:20PM",
+        "price": "$285",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "7:00AM",
+        "landingTime": "12:30PM",
+        "price": "$325",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:45AM",
+        "landingTime": "1:50PM",
+        "price": "$356",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "12:40PM",
+        "price": "$279",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:30AM",
+        "landingTime": "12:40PM",
+        "price": "$292",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "1:20PM",
+        "price": "$356",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "6:20AM",
+        "landingTime": "2:30PM",
+        "price": "$287",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "7:30AM",
+        "landingTime": "3:00PM",
+        "price": "$389",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "6:00AM",
+        "landingTime": "12:00PM",
+        "price": "$262",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "2:30PM",
+        "price": "$307",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "7:35AM",
+        "landingTime": "12:00PM",
+        "price": "$272",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:30AM",
+        "landingTime": "3:50PM",
+        "price": "$404",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "7:50AM",
+        "landingTime": "2:20PM",
+        "price": "$342",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "6:15AM",
+        "landingTime": "12:25PM",
+        "price": "$321",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "6:15AM",
+        "landingTime": "12:50PM",
+        "price": "$265",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "6:30AM",
+        "landingTime": "1:35PM",
+        "price": "$389",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "6:50AM",
+        "landingTime": "1:45PM",
+        "price": "$291",
+        "airliner_id": 2
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:10AM",
+        "landingTime": "2:30PM",
+        "price": "$220",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "4:30PM",
+        "price": "$310",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:10AM",
+        "landingTime": "2:35PM",
+        "price": "$310",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "3:00PM",
+        "price": "$270",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "2:50PM",
+        "price": "$301",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "3:45PM",
+        "price": "$325",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "2:20PM",
+        "price": "$265",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "2:35PM",
+        "price": "$281",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "10:10AM",
+        "landingTime": "3:30PM",
+        "price": "$326",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:15AM",
+        "landingTime": "4:15PM",
+        "price": "$255",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:40AM",
+        "landingTime": "5:20PM",
+        "price": "$374",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "8:00AM",
+        "landingTime": "2:35PM",
+        "price": "$231",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "10:15AM",
+        "landingTime": "4:30PM",
+        "price": "$299",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:30AM",
+        "landingTime": "2:15PM",
+        "price": "$288",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "5:40PM",
+        "price": "$379",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:30AM",
+        "landingTime": "4:10PM",
+        "price": "$322",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "2:30PM",
+        "price": "$312",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "8:25AM",
+        "landingTime": "2:20PM",
+        "price": "$234",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "8:20AM",
+        "landingTime": "3:25PM",
+        "price": "$321",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "8:30AM",
+        "landingTime": "3:50PM",
+        "price": "$287",
+        "airliner_id": 3
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "3:25PM",
+        "price": "$205",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "5:45PM",
+        "price": "$298",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "3:45PM",
+        "price": "$299",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Detroit (DTW)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:20AM",
+        "landingTime": "4:20PM",
+        "price": "$259",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "9:25AM",
+        "landingTime": "3:45PM",
+        "price": "$290",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "4:50PM",
+        "price": "$312",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "10:00AM",
+        "landingTime": "3:30PM",
+        "price": "$257",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Chicago (ORD)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "3:35PM",
+        "price": "$275",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "11:00AM",
+        "landingTime": "4:20PM",
+        "price": "$318",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:20AM",
+        "landingTime": "5:15PM",
+        "price": "$250",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "10:30AM",
+        "landingTime": "6:35PM",
+        "price": "$372",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "San Francisco (SFO)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "9:15AM",
+        "landingTime": "3:30PM",
+        "price": "$228",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "11:10AM",
+        "landingTime": "5:30PM",
+        "price": "$279",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "10:10AM",
+        "landingTime": "3:15PM",
+        "price": "$282",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:20AM",
+        "landingTime": "6:50PM",
+        "price": "$371",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "New York (JFK)",
+        "arrivingCity": "Dallas (DFW)",
+        "takeOffTime": "10:10AM",
+        "landingTime": "5:00PM",
+        "price": "$317",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Detroit (DTW)",
+        "takeOffTime": "9:10AM",
+        "landingTime": "3:20PM",
+        "price": "$304",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "Chicago (ORD)",
+        "takeOffTime": "9:25AM",
+        "landingTime": "3:20PM",
+        "price": "$229",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "San Francisco (SFO)",
+        "takeOffTime": "9:40AM",
+        "landingTime": "4:45PM",
+        "price": "$314",
+        "airliner_id": 4
+    },
+    {
+        "departingDate": "9/13/2021",
+        "departingCity": "Dallas (DFW)",
+        "arrivingCity": "New York (JFK)",
+        "takeOffTime": "9:30AM",
+        "landingTime": "4:50PM",
+        "price": "$277",
+        "airliner_id": 4
     }
 ]
