@@ -16,6 +16,14 @@ Flight.init(
             type: DataTypes.DATE,
             allowNull: false,
         },
+        departingCity: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        arrivingCity: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         takeOffTime: {
             type: DataTypes.STRING,
             allowNull: false,

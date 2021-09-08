@@ -1,14 +1,9 @@
 [
     {
-        "ArrivingDate": "3/4/2021",
-        "DepartingDate": "3/9/2021"
-    },
-    {
-        "ArrivingDate": "3/25/2021",
-        "DepartingDate": "3/30/2021"
-    },
-    {
-        "ArrivingDate": "3/12/2021",
-        "DepartingDate": "3/25/2021"
+        "departingDate": "3/4/2021",
+        "takeOffTime": "3/9/2021",
+        "landingTime": "3/9/2021",
+        "airliner_id": "3/9/2021"
     }
+    
 ]
