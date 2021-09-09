@@ -122,15 +122,21 @@ ticketRouter.put('/update-flight/:id', withAuth, async (req, res) => {
         // ID is for ticket
         const { id } = req.params;
         // Replace with Ticket.findByPk
-        const ticket = await Promise.resolve(bookedTickets.find(ticket => ticket.id == id));
+        const ticket = await Ticket.findByPk(id);
         if (!ticket) {
             res.status(404).json({ message: 'Ticket does not exist' });
         } else if (ticket.customer_id !== req.session.customer_id) {
             res.status(401).json({ message: 'Unauthorized action' });
         } else {
             const { flight_id } = req.body;
-            // Replace with Ticket.update
-            ticket.flight_id = flight_id
+            await Ticket.update(
+                {
+                    flight_id
+                },
+                {
+                    where: { id }
+                }
+            )
             res.json({ message: 'Ticket has successfully been updated with new flight' });
         }
     } catch (err) {
