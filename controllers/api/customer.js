@@ -107,6 +107,34 @@ customerRouter.post('/login', (req, res) => {
         });
 });
 
+customerRouter.put('/update', async (req, res) => {
+    try {
+      const tagData = await Tag.update(
+        {
+          lastName: req.body.lastName,
+          firstName: req.body.firstName,
+          city: req.body.city,
+          state: req.body.state,
+          postalCode: req.body.postalCode,
+          country: req.body.country,
+        },
+        {
+          where: {
+            id: req.session.user_id,
+          },
+        }
+      );
+      if (!tagData) {
+        res.status(404).json({ message: "No tag found with that id!" });
+        return;
+      }
+      res.status(200).json(tagData);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
 customerRouter.post('/logout', async (req, res) => {
     try {
         if (res.session.logged_in) {
