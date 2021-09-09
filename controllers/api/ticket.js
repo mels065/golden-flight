@@ -121,7 +121,6 @@ ticketRouter.put('/update-flight/:id', withAuth, async (req, res) => {
     try {
         // ID is for ticket
         const { id } = req.params;
-        // Replace with Ticket.findByPk
         const ticket = await Ticket.findByPk(id);
         if (!ticket) {
             res.status(404).json({ message: 'Ticket does not exist' });
@@ -147,21 +146,14 @@ ticketRouter.put('/update-flight/:id', withAuth, async (req, res) => {
 ticketRouter.delete('/cancel/:id', withAuth, async (req, res) => {
     // ID is for ticket
     const { id } = req.params;
-    // Replace with Ticket.findByPk
-    const ticket = bookedTickets.find(ticket => ticket.id == id);
+    const ticket = await Ticket.findByPk(id)
 
     if (!ticket) {
         res.status(404).json({ message: 'Ticket does not exist, so cannot be cancelled' });
     } else if (ticket.customer_id !== req.session.customer_id) {
         res.status(401).json({ message: 'Unauthorized action' });
     } else {
-        // Replace below with Ticket.destroy
-        const index = bookedTickets.findIndex(ticket => ticket.id === id);
-        bookedTickets = await Promise.resolve([
-            ...bookedTickets.slice(0, index),
-            ...bookedTickets.slice(index + 1)
-        ]);
-        // Replace above with Ticket.destroy
+        await Ticket.destroy({ where: { id } });
         res.json({ message: 'Flight has been cancelled, so ticket has become invalid' });
     }
 });
