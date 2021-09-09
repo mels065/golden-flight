@@ -9,7 +9,7 @@ airport.init(
             type: DataTypes.INTEGER,
             allownull: false,
             primarykey: true,
-            autoincrement: true,
+            autoIncrement: true,
         },
         AirportCode: {
             type: DataTypes.STRING,

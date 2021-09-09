@@ -9,13 +9,13 @@ Ticket.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoincrement: true,
+            autoIncrement: true,
         },
         roundtrip: {
             type: DataTypes.BOOLEAN,
             allownull: false,
         },
-        orderDate: {
+        order_date: {
             type: DataTypes.DATE,
             allownull: false,
             defaultValue: DataTypes.NOW,

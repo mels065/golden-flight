@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { Airliner, customer, flight, ticket } = require('../models');
+const { Airliner, Customer, Flight, Ticket } = require('../models');
 
 const customerSeedData = require('./customerData.json');
 const airlinerSeedData = require('./airlinerData.json');
@@ -8,7 +8,7 @@ const flightSeedData = require('./flightData.json');
 const seedDatabase = async () => {
     await sequelize.sync({ force: true});
 
-    const customers = await customer.bulkCreate(customerSeedData, {
+    const customers = await Customer.bulkCreate(customerSeedData, {
         individualHooks: true,
         returning: true,
     });
@@ -17,12 +17,12 @@ const seedDatabase = async () => {
         returning: true
     });
 
-    const flights = await flight.bulkCreate(flightSeedData, {
+    const flights = await Flight.bulkCreate(flightSeedData, {
         returning: true,
     });
 
     for (const { id } of customers) {
-        const newticket = await ticket.create({
+        const newticket = await Ticket.create({
             customer_id: id,
             flight_id: flights[Math.floor(Math.random() * flights)].id,
         });
