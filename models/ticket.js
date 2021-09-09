@@ -28,9 +28,16 @@ Ticket.init(
             type: DataTypes.INTEGER,
             references: {
                 model: 'Customer',
-                Key: 'id',
+                key: 'id',
             },
         },
+        flight_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'Flight',
+                key: 'id'
+            }
+        }
     },
     {
         sequelize,
