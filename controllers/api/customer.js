@@ -109,7 +109,7 @@ customerRouter.post('/login', (req, res) => {
 
 customerRouter.put('/update', async (req, res) => {
     try {
-      const tagData = await Tag.update(
+      const customerData = await Customer.update(
         {
           lastName: req.body.lastName,
           firstName: req.body.firstName,
@@ -124,11 +124,11 @@ customerRouter.put('/update', async (req, res) => {
           },
         }
       );
-      if (!tagData) {
-        res.status(404).json({ message: "No tag found with that id!" });
+      if (!customerData) {
+        res.status(404).json({ message: "No Customer found with that id!" });
         return;
       }
-      res.status(200).json(tagData);
+      res.status(200).json(customerData);
     } catch (err) {
       res.status(500).json(err);
     }
