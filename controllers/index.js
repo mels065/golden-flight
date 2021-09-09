@@ -56,25 +56,61 @@ router.get('/home', withAuth, async (req, res) => {
   router.get('/results', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
-      const flightData = await flight.findAll({
+      const {departingDate, departingCity, arrivingCity} = req.query;
+      const flightData = await Flight.findAll({
         where: {
-          departingAP: req.body.departingAP,
-          arrivingAP: req.body.arrivingAP,
-          departureDate: req.body.departureDate,
-          
-        },
-        include: [{ model: airport }],
+          departingDate, departingCity, arrivingCity
+          },
+          include: [{model: Airliner}]
       });
   
-      const flight = flightData.get({ plain: true });
-  
+      const flights = flightData.map(flight => flight.get({ plain: true }));
+      
+        console.log(flights);
       res.render('results', {
-        ...flight
+        flights
       });
     } catch (err) {
-      res.status(500).json(err);
+      res.status(500).json(err.message);
     }
   });
+
+
+
+  router.get('/flights', withAuth, (req, res) => {
+    Post.findAll({
+            where: {
+                user_id: req.session.user_id
+            },
+            attributes: [
+                'id',
+                'title',
+                'content',
+                'created_at'
+            ],
+            include: [{
+                    model: Comment,
+                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                    include: {
+                        model: User,
+                        attributes: ['username']
+                    }
+                },
+                {
+                    model: User,
+                    attributes: ['username']
+                }
+            ]
+        })
+        .then(dbPostData => {
+            const posts = dbPostData.map(post => post.get({ plain: true }));
+            res.render('dashboard', { posts, loggedIn: true });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
 
 
 module.exports = router;

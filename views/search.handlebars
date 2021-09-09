@@ -12,17 +12,17 @@
  <div class="container d-flex justify-content-center">
    <h2>Where Would You Like To Go?</h2>
    </div>
-<form action="" class="search-form">
+<form method="GET" action="/results" class="search-form">
   <div class="ui-widget">
     <label for="tags">Leaving from</label>
-    <input class="departingField" id="tags" />
+    <input required class="departingField" id="tags" name="departingCity"/>
   </div>
   <div class="ui-widget">
     <label for="tags">Going to</label>
-    <input class="arrivingField" id="tags2" />
+    <input required class="arrivingField" id="tags2" name="arrivingCity"/>
   </div>
-  <p>Departing <input type="text" id="datepicker" /></p>
+  <p>Departing <input required type="text" id="datepicker" name="departingDate"/></p>
   <input id="searchBtn" type="submit" name="" value="Search" />
 </form>
 
-<script src="./js/search.js"></script>
+{{!-- <!-- <script src="./js/search.js"></script> -->  --}}
