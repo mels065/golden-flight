@@ -1,13 +1,17 @@
+ <div class="container d-flex justify-content-center">
+   <h2>Flights from <strong>{{departingCity}}</strong> to <strong>{{arrivingCity}}</strong></h2>
+   </div>
+
 <form class="container px-4">
   <div class="row results">
     <div class="col">
-      Delta
+      {{airliner}}
     </div>
     <div class="col">
-      8:00am - 9:45pm
+      {{takeOffTime}} - {{arrivingTime}}
     </div>
     <div class="col">
-      Price
+      {{price}}
     </div>
     <a href="../../controllers/api/flight/{{id}}" class="col-2 book-flight">
       Book flight

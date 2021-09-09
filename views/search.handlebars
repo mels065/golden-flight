@@ -1,20 +1,28 @@
 <header>
-    <div class="circular--portrait" ><img src="img/airplane.png" alt="airplane"></div>
-    <h1>Golden Flights</h1>
+  <div class="circular--portrait"><img
+      src="img/airplane.png"
+      alt="airplane"
+    /></div>
+  <h1>Golden Flights</h1>
   <button class="no-button" id="logout">logout</button>
 </header>
-<h2>Welcome, {{firstName}}!</h2>
-    <form action="" class="search-form">
-<div class="ui-widget">
-  <label for="tags">Leaving from</label>
-  <input class="departingField" id="tags">
-</div>
-<div class="ui-widget">
-  <label for="tags">Going to</label>
-  <input class="arrivingField" id="tags2">
-</div>
-<p>Departing <input type="text" id="datepicker"></p>
- <input id="searchBtn" type="submit" name="" value="Search">
-    </form>
+ <div class="container d-flex justify-content-center">
+   <h2>Welcome, <strong>{{firstName}}</strong>!</h2>
+   </div>
+ <div class="container d-flex justify-content-center">
+   <h2>Where Would You Like To Go?</h2>
+   </div>
+<form action="" class="search-form">
+  <div class="ui-widget">
+    <label for="tags">Leaving from</label>
+    <input class="departingField" id="tags" />
+  </div>
+  <div class="ui-widget">
+    <label for="tags">Going to</label>
+    <input class="arrivingField" id="tags2" />
+  </div>
+  <p>Departing <input type="text" id="datepicker" /></p>
+  <input id="searchBtn" type="submit" name="" value="Search" />
+</form>
 
-    <script src="./js/search.js"></script>
+<script src="./js/search.js"></script>

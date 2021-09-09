@@ -17,7 +17,7 @@ router.get('/home', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       console.log('in');
-      const customerData = await Customer.findByPk(req.session.user_id, {
+      const customerData = await Customer.findByPk(req.session.customer_id, {
         
         attributes: { exclude: ['password'] },
       });
@@ -36,7 +36,7 @@ router.get('/home', withAuth, async (req, res) => {
   router.get('/search', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
-      const customerData = await Customer.findByPk(req.session.user_id, {
+      const customerData = await Customer.findByPk(req.session.customer_id, {
         
         attributes: { exclude: ['password'] },
       });
@@ -51,6 +51,7 @@ router.get('/home', withAuth, async (req, res) => {
       res.status(500).json(err);
     }
   });
+
 
   router.get('/results', withAuth, async (req, res) => {
     try {

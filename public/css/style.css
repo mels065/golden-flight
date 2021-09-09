@@ -160,13 +160,16 @@ header h1 {
   color: var(--dark-gold);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  margin-top: 15px;
 }
+
+
 
 .search-form {
   position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     padding: 20px;
 }
 
@@ -185,11 +188,6 @@ header h1 {
 
 .results {
   margin-bottom: 20px;
-}
-
-.purchase-ticket {
-  text-align: center;
-  margin-top: 25px;
 }
 
 .row h2 {

@@ -76,6 +76,7 @@ customerRouter.post('/register', async (req, res) => {
 
 
 
+
 customerRouter.post('/login', (req, res) => {
     Customer.findOne({
             where: {
@@ -94,7 +95,7 @@ customerRouter.post('/login', (req, res) => {
             }
             req.session.save(() => {
 
-                req.session.user_id = dbCustomerData.id;
+                req.session.customer_id = dbCustomerData.id;
                 req.session.email = dbCustomerData.email;
                 req.session.logged_in = true;
 
@@ -120,7 +121,7 @@ customerRouter.put('/update', async (req, res) => {
         },
         {
           where: {
-            id: req.session.user_id,
+            id: req.session.customer_id,
           },
         }
       );
