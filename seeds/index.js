@@ -23,8 +23,10 @@ const seedDatabase = async () => {
 
     for (const { id } of customers) {
         const newticket = await Ticket.create({
+            roundtrip: true,
+	        baggage: true,
             customer_id: id,
-            flight_id: flights[Math.floor(Math.random() * flights)].id,
+            flight_id: flights[Math.floor(Math.random() * flights.length)].id,
         });
     }
 
