@@ -38,7 +38,7 @@ async function init() {
     app.use(router);
 
     try {
-        await sequelize.sync({ force: true });
+        await sequelize.sync({ force: false });
         app.listen(PORT, async () => {
             console.log(`Server listening on port ${PORT}`);
             setInterval(populateFlights, 1000 * 60 * 60 * 24);
