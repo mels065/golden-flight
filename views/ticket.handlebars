@@ -7,7 +7,7 @@
   <button class="no-button" id="logout">logout</button>
 </header>
  <div class="container d-flex justify-content-center">
-   <h2><strong>{{firstName}}</strong>'s tickets</h2>
+   <h2><strong>Put in information for your flight</h2>
    </div>
 
 <div class="container px-4">
@@ -21,38 +21,10 @@
     <div class="col">
       {{price}}
     </div>
-    <a href="../../controllers/api/flight/{{id}}" class="col-2 book-flight">
-      Book flight
-    </a>
   </div>
  </div>
 
+roundtrip
+order_date
+baggage
 
-      roundtrip: {
-            type: DataTypes.BOOLEAN,
-            allownull: false,
-        },
-        order_date: {
-            type: DataTypes.DATE,
-            allownull: false,
-            defaultValue: DataTypes.NOW,
-        },
-        baggage: {
-            type: DataTypes.BOOLEAN,
-            allownull: false,
-        },
-        customer_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'Customer',
-                key: 'id',
-            },
-        },
-        flight_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'Flight',
-                key: 'id'
-            }
-        }
-    },
