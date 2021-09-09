@@ -9,13 +9,13 @@ Ticket.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoincrement: true,
+            autoIncrement: true,
         },
         roundtrip: {
             type: DataTypes.BOOLEAN,
             allownull: false,
         },
-        orderDate: {
+        order_date: {
             type: DataTypes.DATE,
             allownull: false,
             defaultValue: DataTypes.NOW,
@@ -28,9 +28,16 @@ Ticket.init(
             type: DataTypes.INTEGER,
             references: {
                 model: 'Customer',
-                Key: 'id',
+                key: 'id',
             },
         },
+        flight_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'Flight',
+                key: 'id'
+            }
+        }
     },
     {
         sequelize,
