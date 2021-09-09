@@ -22,6 +22,9 @@ Customer.init(
             type: DataTypes.STRING,
             allowNull: false,
             unique: true
+            validate: {
+                isEmail: true,
+            }
         },
         password: {
             type: DataTypes.STRING,
@@ -29,6 +32,30 @@ Customer.init(
             validate: {
                 len: [8],
             },
+        },
+        firstName: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        lastName: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        address: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        city: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        state: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        country: {
+            type: DataTypes.STRING,
+            allowNull: true,
         },
         
     },
@@ -43,7 +70,6 @@ Customer.init(
               return updatedcustomerData;
             },
         },
-    
         sequelize,
         timestamp: false,
         freezeTableName: true,
