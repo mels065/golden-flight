@@ -76,7 +76,7 @@ router.get('/home', withAuth, async (req, res) => {
   });
 
   router.get('/flight/:id', withAuth, async (req, res) => {
-    //try {
+    try {
     
       const flightData = await Flight.findOne({
         where: {
@@ -89,9 +89,9 @@ router.get('/home', withAuth, async (req, res) => {
      
         console.log(flight);
       res.render('ticket', flight);
-   // } catch (err) {
-   //   res.status(500).json(err.message);
-   // }
+    } catch (err) {
+      res.status(500).json(err.message);
+    }
   });
 
   router.get('/ticket', withAuth, async (req, res) => {
@@ -119,23 +119,24 @@ router.get('/home', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       console.log('in');
-      const ticketData = await Ticket.findByPk(req.session.customer_id, {
-        
-        attributes: { exclude: ['password'] },
+      const ticketData =  await Ticket.findAll({
+        where: {
+          customer_id: req.session.customer_id
+        },
         include: [{model: Customer}, {model: Flight}]
       });
       console.log(ticketData);
-      const customer = ticketData.get({ plain: true });
+      const tickets = ticketData.map(ticket => ticket.get({ plain: true }));
   
-      res.render('/mytickets', {
-        ...customer,
-        logged_in: true
-      });
+      res.render('/mytickets', 
+        tickets,
+       
+      );
     } catch (err) {
       res.status(500).json(err);
     }
   });
 
 
-
 module.exports = router;
+

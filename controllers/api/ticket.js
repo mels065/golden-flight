@@ -6,6 +6,7 @@ const ticketRouter = require('express').Router();
 const withAuth = require('../../utils/with-auth');
 
 ticketRouter.post('/book', withAuth, async (req, res) => {
+    console.log(req.body);
     try {
         const ticket = await Ticket.create({
             ...req.body,
