@@ -71,7 +71,7 @@ ticketRouter.get('/download-itinerary/:id', withAuth, async (req, res) => {
                     {
                         'Content-Length': Buffer.byteLength(pdfData),
                         'Content-Type': 'application/pdf',
-                        'Content-Disposition': `attachment;filename=itinerary-${ticket.id}`
+                        'Content-Disposition': `attachment;filename=itinerary-${ticket.id}.pdf`
                     }
                 )
                     .end(pdfData);
