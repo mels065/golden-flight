@@ -115,7 +115,7 @@ router.get('/home', withAuth, async (req, res) => {
   });
 
   
-  router.get('/mytickets', withAuth, async (req, res) => {
+  /*router.get('/mytickets', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       console.log('in');
@@ -135,7 +135,13 @@ router.get('/home', withAuth, async (req, res) => {
     } catch (err) {
       res.status(500).json(err);
     }
-  });
+  }); */
+
+  router.get('/mytickets', (req, res) => {
+
+    res.render('mytickets');
+});
+
 
 
 module.exports = router;

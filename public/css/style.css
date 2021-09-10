@@ -202,3 +202,16 @@ header h1 {
   padding: 20px;
 }
 
+.mytickets {
+  border: 2px solid var(--dark-gold);
+}
+
+.row {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.row1, .row2 {
+  border-bottom: 1px dashed var(--dark-gold);
+}
+
