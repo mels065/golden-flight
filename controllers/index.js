@@ -57,16 +57,17 @@ router.get('/home', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       const {departingDate, departingCity, arrivingCity} = req.query;
+
       const flightData = await Flight.findAll({
         where: {
           departingDate, departingCity, arrivingCity
-          },
-          include: [{model: Airliner}]
+        },
+        include: [{model: Airliner}]
       });
   
       const flights = flightData.map(flight => flight.get({ plain: true }));
       
-        console.log(flights);
+      // console.log(flights);
       res.render('results', {
         flights
       });
