@@ -14,18 +14,18 @@
 <div class="container px-4">
   <div class="row results">
     <div class="col">
-      {{Airliner.name}}
+      {{flight.Airliner.name}}
     </div>
     <div class="col">
-      {{takeOffTime}} - {{landingTime}}
+      {{flight.takeOffTime}} - {{flight.landingTime}}
     </div>
     <div class="col">
-      {{price}}
+      {{flight.price}}
     </div>
   </div>
  </div>
 
-<form data-flightid="{{id}}" class="ticket-info" >
+<form data-flightid="{{flight.id}}" class="ticket-info" >
  <div class="form-check">
   <input class="form-check-input roundTrip" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">

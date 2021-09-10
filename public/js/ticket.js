@@ -6,7 +6,7 @@ const ticketFormHandler = async(event) => {
   const order_date = document.querySelector('.ticketDate').innerHTML;
   const flight_id = event.target.dataset.flightid;
 
-  console.log(baggage, roundtrip, order_date);
+  console.log(event.target.dataset);
   
   const response = await fetch('/api/ticket/book', {
     method: 'POST',

@@ -9,12 +9,14 @@ const withAuth = require('../../utils/with-auth');
 
 ticketRouter.post('/book', withAuth, async (req, res) => {
     try {
+        console.log(req.body);
         const ticket = await Ticket.create({
             ...req.body,
             customer_id: req.session.customer_id
         });
         res.json(ticket);
     } catch (err) {
+        console.error(err);
         res.status(400).json({ message: err.message });
     }
 });
