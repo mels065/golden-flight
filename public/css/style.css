@@ -178,7 +178,7 @@ header h1 {
   margin-bottom: 25px;
 }
 
-.book-flight {
+.book-flight, .cancel-flight {
   background: var(--light-gold);
   color: black;
   text-align: center;
