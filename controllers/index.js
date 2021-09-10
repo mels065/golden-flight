@@ -59,22 +59,16 @@ router.get('/home', withAuth, async (req, res) => {
     try {
       const {departingDate, departingCity, arrivingCity} = req.query;
 
-      // Used this for accurately finding the date: https://stackoverflow.com/questions/56340151/how-to-fetch-sequelize-js-records-for-today/56340424#56340424
-      const DEPARTING_DAY_START = new Date(departingDate).setHours(0, 0, 0, 0);
-      const DEPARTING_DAY_END = new Date(departingDate).setHours(23, 59, 59, 999);
-
-      // const flightData = await Flight.findAll({
-      //   where: {
-      //     departingDate,
-      //     departingCity,
-      //     arrivingCity
-      //   },
-      //   include: [{model: Airliner}]
-      // });
-      flightData = await Flight.findAll();
+      const flightData = await Flight.findAll({
+        where: {
+          departingDate,
+          departingCity,
+          arrivingCity
+        },
+        include: [{model: Airliner}]
+      });
   
       const flights = flightData.map(flight => flight.get({ plain: true }));
-      console.log(flights);
       
       // console.log(flights);
       res.render('results', {
