@@ -1,0 +1,56 @@
+<header>
+  <div class="circular--portrait"><img
+      src="/img/airplane.png"
+      alt="airplane"
+    /></div>
+  <h1>Golden Flights</h1>
+  <button class="no-button" id="logout">logout</button>
+</header>
+ <div class="container d-flex justify-content-center">
+   <h2 class="flight-information"><strong>My Tickets</h2>
+   </div>
+
+{{#each tickets as |ticket|}}
+{{> myticket-details}}
+{{/each}}
+
+<!-- Below this is suppose to go in myticket-details.handlebars-->
+
+<div class="container mytickets gx-5 gy-5">
+   <div class="row row1 gx-5">
+    <div class="col">
+      Destination: <br> Detoit to Chicago
+    </div>
+    <div class="col">
+      Name of Passenger: <br> John Doe
+    </div>
+    <div class="col">
+      Departure Date: <br> September 12, 2021
+    </div>
+    <div class="col-2">
+      Purchase Date: <br> September 10, 2021
+    </div>
+  </div>
+  <div class="row row2 gy-5">
+    <div class="col">
+      Delta
+    </div>
+    <div class="col">
+      8:00AM - 2:00PM
+    </div>
+    <div class="col">
+      $300
+    </div>
+  </div>
+  <div class="row gy-5">
+    <div class="col">
+      Has Baggage:  true
+    </div>
+    <div class="col">
+      Round trip:  false
+    </div>
+    <a href="/api/ticket/cancel/{{id}}" class="col-2 cancel-flight">
+      Cancel Flight
+    </a>
+  </div>
+ </div>

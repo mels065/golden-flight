@@ -1,4 +1,3 @@
-const fs = require('fs');
 const moment = require('moment');
 const PDFDocument = require('pdfkit');
 
@@ -101,7 +100,7 @@ ticketRouter.get('/download-itinerary/:id', withAuth, async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
-})
+});
 
 ticketRouter.delete('/cancel/:id', withAuth, async (req, res) => {
     // ID is for ticket

@@ -78,8 +78,8 @@ customerRouter.put('/update', async (req, res) => {
 
 customerRouter.post('/logout', async (req, res) => {
     try {
-        if (res.session.logged_in) {
-            res.session.destroy();
+        if (req.session.logged_in) {
+            req.session.destroy();
             res.redirect('/');
         } else {
             res.status(400).json('No user was logged in');
