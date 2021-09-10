@@ -75,42 +75,67 @@ router.get('/home', withAuth, async (req, res) => {
     }
   });
 
+  router.get('/flight/:id', withAuth, async (req, res) => {
+    //try {
+    
+      const flightData = await Flight.findOne({
+        where: {
+          id: req.params.id
+          },
+          include: [{model: Airliner}]
+      });
+  
+      const flight = flightData.get({ plain: true });
+     
+        console.log(flight);
+      res.render('ticket', flight);
+   // } catch (err) {
+   //   res.status(500).json(err.message);
+   // }
+  });
 
+  router.get('/ticket', withAuth, async (req, res) => {
+    try {
+      // Find the logged in user based on the session ID
+      console.log('in');
+      const customerData = await Customer.findByPk(req.session.customer_id, {
+        
+        attributes: { exclude: ['password'] },
+      });
+      console.log(customerData);
+      const customer = customerData.get({ plain: true });
+  
+      res.render('home', {
+        ...customer,
+        logged_in: true
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
-  router.get('/flights', withAuth, (req, res) => {
-    Post.findAll({
-            where: {
-                user_id: req.session.user_id
-            },
-            attributes: [
-                'id',
-                'title',
-                'content',
-                'created_at'
-            ],
-            include: [{
-                    model: Comment,
-                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-                    include: {
-                        model: User,
-                        attributes: ['username']
-                    }
-                },
-                {
-                    model: User,
-                    attributes: ['username']
-                }
-            ]
-        })
-        .then(dbPostData => {
-            const posts = dbPostData.map(post => post.get({ plain: true }));
-            res.render('dashboard', { posts, loggedIn: true });
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
-});
+  
+  router.get('/mytickets', withAuth, async (req, res) => {
+    try {
+      // Find the logged in user based on the session ID
+      console.log('in');
+      const ticketData = await Ticket.findByPk(req.session.customer_id, {
+        
+        attributes: { exclude: ['password'] },
+        include: [{model: Customer}, {model: Flight}]
+      });
+      console.log(ticketData);
+      const customer = ticketData.get({ plain: true });
+  
+      res.render('/mytickets', {
+        ...customer,
+        logged_in: true
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
 
 
 module.exports = router;
