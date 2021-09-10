@@ -155,7 +155,7 @@ header h1 {
   
 }
 
-.container h2 {
+.container h2, h4 {
   margin-bottom: 25px;
   color: var(--dark-gold);
   -webkit-text-stroke-width: 1px;
@@ -163,7 +163,12 @@ header h1 {
   margin-top: 15px;
 }
 
-
+.flight-results {
+  color: var(--light-gold);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  background-color: black;
+}
 
 .search-form {
   position: absolute;
@@ -178,7 +183,7 @@ header h1 {
   margin-bottom: 25px;
 }
 
-.book-flight {
+.book-flight, .cancel-flight {
   background: var(--light-gold);
   color: black;
   text-align: center;
@@ -200,5 +205,18 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
+}
+
+.mytickets {
+  border: 2px solid var(--dark-gold);
+}
+
+.row {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.row1, .row2 {
+  border-bottom: 1px dashed var(--dark-gold);
 }
 
