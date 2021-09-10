@@ -148,6 +148,15 @@ header h1 {
   border: none;
 }
 
+.my-tickets {
+  position: absolute;
+  right: 150px;
+  top: 42px;
+  background: none;
+  border: none;
+  color: black;
+}
+
 .customer-info {
   border: 2px solid black;
   padding: 20px;

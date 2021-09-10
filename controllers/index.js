@@ -123,7 +123,7 @@ router.get('/home', withAuth, async (req, res) => {
   });
 
   
-  /*router.get('/mytickets', withAuth, async (req, res) => {
+  router.get('/mytickets', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       console.log('in');
@@ -131,21 +131,24 @@ router.get('/home', withAuth, async (req, res) => {
         where: {
           customer_id: req.session.customer_id
         },
-        include: [{model: Customer}, {model: Flight}]
+        include: [{model: Customer}, {model: Flight, include: [
+          {model: Airliner}
+        ]}]
       });
       console.log(ticketData);
       const tickets = ticketData.map(ticket => ticket.get({ plain: true }));
+      console.log(tickets);
   
-      res.render('/mytickets', 
-        tickets,
+      res.render('mytickets', { 
+        tickets }
        
       );
     } catch (err) {
       res.status(500).json(err);
     }
-  }); */
+  }); 
 
-  router.get('/mytickets', (req, res) => {
+ /* router.get('/mytickets', (req, res) => {
 
     res.render(
       'mytickets',
@@ -154,7 +157,7 @@ router.get('/home', withAuth, async (req, res) => {
       }
     );
 });
-
+*/
 
 
 module.exports = router;
