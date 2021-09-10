@@ -26,7 +26,7 @@ router.get('/home', withAuth, async (req, res) => {
   
       res.render('home', {
         ...customer,
-        logged_in: true
+        logged_in: req.session.logged_in
       });
     } catch (err) {
       res.status(500).json(err);
@@ -45,7 +45,7 @@ router.get('/home', withAuth, async (req, res) => {
   
       res.render('search', {
         ...customer,
-        logged_in: true
+        logged_in: req.session.logged_in
       });
     } catch (err) {
       res.status(500).json(err);
@@ -69,7 +69,8 @@ router.get('/home', withAuth, async (req, res) => {
       
       // console.log(flights);
       res.render('results', {
-        flights
+        flights,
+        logged_in: req.session.logged_in
       });
     } catch (err) {
       res.status(500).json(err.message);
@@ -89,7 +90,13 @@ router.get('/home', withAuth, async (req, res) => {
       const flight = flightData.get({ plain: true });
      
         console.log(flight);
-      res.render('ticket', flight);
+      res.render(
+        'ticket', 
+        {
+          flight,
+          logged_in: req.session.logged_in
+        }
+      );
     } catch (err) {
       res.status(500).json(err.message);
     }
@@ -108,7 +115,7 @@ router.get('/home', withAuth, async (req, res) => {
   
       res.render('home', {
         ...customer,
-        logged_in: true
+        logged_in: req.session.logged_in
       });
     } catch (err) {
       res.status(500).json(err);
@@ -140,7 +147,12 @@ router.get('/home', withAuth, async (req, res) => {
 
   router.get('/mytickets', (req, res) => {
 
-    res.render('mytickets');
+    res.render(
+      'mytickets',
+      {
+        logged_in: req.session.logged_in
+      }
+    );
 });
 
 
