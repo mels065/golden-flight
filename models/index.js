@@ -1,5 +1,5 @@
-const Customer = require('./Customer');
-const Ticket = require('./Ticket');
+const Customer = require('./customer');
+const Ticket = require('./ticket');
 const Airliner = require('./Airliner');
 const Flight = require('./Flight');
 
