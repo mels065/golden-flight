@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS dd4q0stku4neke7y;
+CREATE DATABASE dd4q0stku4neke7y;

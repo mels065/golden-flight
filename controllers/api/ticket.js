@@ -89,7 +89,7 @@ ticketRouter.get('/download-itinerary/:id', withAuth, async (req, res) => {
                 .fontSize(18)
                 .text(`Order Date: ${moment(ticket.order_date).format('MM/DD/YYYY')}`);
             doc.text(`Price: ${ticket.Flight.price}`);
-            doc.text(`Departing Date: ${ticket.Flight.departingData}`);
+            doc.text(`Departing Date: ${ticket.Flight.departingDate}`);
             doc.text(`Take Off Time: ${ticket.Flight.takeOffTime}`);
             doc.text(`Landing Time: ${ticket.Flight.landingTime}`);
             doc.text(`Roundtrip?: ${ticket.roundtrip ? 'Yes' : 'No'}`);

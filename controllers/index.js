@@ -66,6 +66,7 @@ router.get('/home', withAuth, async (req, res) => {
       });
   
       const flights = flightData.map(flight => flight.get({ plain: true }));
+      console.log(flights);
       
       // console.log(flights);
       res.render('results', {
