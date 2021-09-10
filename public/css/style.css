@@ -1,5 +1,10 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
 
+:root {
+  --light-gold: rgba(243, 215, 115, 255);
+  --dark-gold: rgba(176,123,16,255);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,7 +13,7 @@
 }
 
 header {
-  background: linear-gradient(rgba(176,123,16,255), rgba(243, 215, 115, 255), rgba(176,123,16,255));
+  background: linear-gradient(var(--dark-gold), var(--light-gold), var(--dark-gold));
   padding: 5px;
   display: flex;
 }
@@ -143,11 +148,28 @@ header h1 {
   border: none;
 }
 
+.customer-info {
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 25px;
+  
+}
+
+.container h2 {
+  margin-bottom: 25px;
+  color: var(--dark-gold);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin-top: 15px;
+}
+
+
+
 .search-form {
   position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     padding: 20px;
 }
 
@@ -156,28 +178,16 @@ header h1 {
   margin-bottom: 25px;
 }
 
-.container {
-  border: 2px solid black;
-  padding: 20px;
-  margin-bottom: 25px;
-  
-}
-
 .book-flight {
-  background:rgba(243, 215, 115, 255);
+  background: var(--light-gold);
   color: black;
   text-align: center;
   cursor: pointer;
-  border: 2px solid rgba(176,123,16,255);
+  border: 2px solid var(--dark-gold);
 }
 
 .results {
   margin-bottom: 20px;
-}
-
-.purchase-ticket {
-  text-align: center;
-  margin-top: 25px;
 }
 
 .row h2 {

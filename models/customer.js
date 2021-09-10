@@ -53,6 +53,11 @@ Customer.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
+        postalCode: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        
         country: {
             type: DataTypes.STRING,
             allowNull: true,

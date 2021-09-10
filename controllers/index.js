@@ -3,7 +3,7 @@ const apiRouter = require('./api');
 const router = express.Router();
 const withAuth = require('../utils/with-auth');
 
-const { customer, ticket, flight, airport, passangers } = require('../models');
+const { Customer, Ticket, Flight, Airliner } = require('../models');
 
 router.use('/api', apiRouter);
 
@@ -17,7 +17,7 @@ router.get('/home', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       console.log('in');
-      const customerData = await customer.findByPk(req.session.user_id, {
+      const customerData = await Customer.findByPk(req.session.customer_id, {
         
         attributes: { exclude: ['password'] },
       });
@@ -33,28 +33,84 @@ router.get('/home', withAuth, async (req, res) => {
     }
   });
 
-  router.get('/results', withAuth, async (req, res) => {
+  router.get('/search', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
-      const flightData = await flight.findAll({
-        where: {
-          departingAP: req.body.departingAP,
-          arrivingAP: req.body.arrivingAP,
-          departureDate: req.body.departureDate,
-          
-        },
-        include: [{ model: airport }],
+      const customerData = await Customer.findByPk(req.session.customer_id, {
+        
+        attributes: { exclude: ['password'] },
       });
+      console.log(customerData);
+      const customer = customerData.get({ plain: true });
   
-      const flight = flightData.get({ plain: true });
-  
-      res.render('results', {
-        ...flight
+      res.render('search', {
+        ...customer,
+        logged_in: true
       });
     } catch (err) {
       res.status(500).json(err);
     }
   });
+
+
+  router.get('/results', withAuth, async (req, res) => {
+    try {
+      // Find the logged in user based on the session ID
+      const {departingDate, departingCity, arrivingCity} = req.query;
+      const flightData = await Flight.findAll({
+        where: {
+          departingDate, departingCity, arrivingCity
+          },
+          include: [{model: Airliner}]
+      });
+  
+      const flights = flightData.map(flight => flight.get({ plain: true }));
+      
+        console.log(flights);
+      res.render('results', {
+        flights
+      });
+    } catch (err) {
+      res.status(500).json(err.message);
+    }
+  });
+
+
+
+  router.get('/flights', withAuth, (req, res) => {
+    Post.findAll({
+            where: {
+                user_id: req.session.user_id
+            },
+            attributes: [
+                'id',
+                'title',
+                'content',
+                'created_at'
+            ],
+            include: [{
+                    model: Comment,
+                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                    include: {
+                        model: User,
+                        attributes: ['username']
+                    }
+                },
+                {
+                    model: User,
+                    attributes: ['username']
+                }
+            ]
+        })
+        .then(dbPostData => {
+            const posts = dbPostData.map(post => post.get({ plain: true }));
+            res.render('dashboard', { posts, loggedIn: true });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
 
 
 module.exports = router;
