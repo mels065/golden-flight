@@ -4,6 +4,7 @@
       alt="airplane"
     /></div>
   <h1>Golden Flights</h1>
+  <a class="my-tickets" href="/mytickets">My Tickets</a>
   <button class="no-button" id="logout">logout</button>
 </header>
  <div class="container d-flex justify-content-center">
@@ -24,7 +25,7 @@
   </div>
  </div>
 
-<form class="ticket-info" >
+<form data-flightid={{id}} class="ticket-info" >
  <div class="form-check">
   <input class="form-check-input roundTrip" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">

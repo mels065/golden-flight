@@ -4,12 +4,13 @@ const ticketFormHandler = async(event) => {
   const baggage = document.querySelector('.baggage').checked;
   const roundtrip = document.querySelector('.roundTrip').checked;
   const order_date = document.querySelector('.ticketDate').innerHTML;
+  const flight_id = event.target.dataset.flightid;
 
   console.log(baggage, roundtrip, order_date);
   
   const response = await fetch('/api/ticket/book', {
     method: 'POST',
-    body: JSON.stringify({ baggage, roundtrip , order_date}),
+    body: JSON.stringify({ baggage, roundtrip , order_date, flight_id}),
     headers: { 'Content-Type': 'application/json' },
   
   })
