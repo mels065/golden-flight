@@ -1,4 +1,6 @@
 const express = require('express');
+const Op = require('sequelize').Op;
+
 const apiRouter = require('./api');
 const router = express.Router();
 const withAuth = require('../utils/with-auth');
@@ -55,15 +57,21 @@ router.get('/home', withAuth, async (req, res) => {
 
   router.get('/results', withAuth, async (req, res) => {
     try {
-      // Find the logged in user based on the session ID
       const {departingDate, departingCity, arrivingCity} = req.query;
 
-      const flightData = await Flight.findAll({
-        where: {
-          departingDate, departingCity, arrivingCity
-        },
-        include: [{model: Airliner}]
-      });
+      // Used this for accurately finding the date: https://stackoverflow.com/questions/56340151/how-to-fetch-sequelize-js-records-for-today/56340424#56340424
+      const DEPARTING_DAY_START = new Date(departingDate).setHours(0, 0, 0, 0);
+      const DEPARTING_DAY_END = new Date(departingDate).setHours(23, 59, 59, 999);
+
+      // const flightData = await Flight.findAll({
+      //   where: {
+      //     departingDate,
+      //     departingCity,
+      //     arrivingCity
+      //   },
+      //   include: [{model: Airliner}]
+      // });
+      flightData = await Flight.findAll();
   
       const flights = flightData.map(flight => flight.get({ plain: true }));
       console.log(flights);
@@ -141,9 +149,9 @@ router.get('/home', withAuth, async (req, res) => {
       console.log(tickets);
   
       res.render('mytickets', { 
-        tickets }
-       
-      );
+        tickets,
+        logged_in: req.session.logged_in
+      });
     } catch (err) {
       res.status(500).json(err);
     }
