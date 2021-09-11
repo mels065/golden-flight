@@ -28,13 +28,14 @@
         <p>City:</p><input type="text" name="" class="city" />
       </div>
        <div class="col">
-        <p>State:</p><input type="text" name="" class="state" />
+        <p>State:</p><input type="text" name="" class="state" pattern="[A-Z]{2}" />
       </div>
       <div class="col">
         <p>Postal Code:</p><input
           type="text"
           name=""
           class="postalCode"
+          pattern="[0-9]{5}"
         />
       </div>
     </div>
