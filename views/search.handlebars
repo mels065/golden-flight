@@ -1,0 +1,29 @@
+<header>
+  <div class="circular--portrait"><img
+      src="img/airplane.png"
+      alt="airplane"
+    /></div>
+  <h1>Golden Flights</h1>
+  <a class="my-tickets" href="/mytickets">My Tickets</a>
+  <button class="no-button" id="logout">logout</button>
+</header>
+ <div class="container d-flex justify-content-center">
+   <h2>Welcome, <strong>{{firstName}}</strong>!</h2>
+   </div>
+ <div class="container d-flex justify-content-center">
+   <h2>Where Would You Like To Go?</h2>
+   </div>
+<form method="GET" action="/results" class="search-form">
+  <div class="ui-widget">
+    <label for="tags">Leaving from</label>
+    <input required class="departingField" id="tags" name="departingCity"/>
+  </div>
+  <div class="ui-widget">
+    <label for="tags">Going to</label>
+    <input required class="arrivingField" id="tags2" name="arrivingCity"/>
+  </div>
+  <p>Departing <input required type="text" id="datepicker" name="departingDate"/></p>
+  <input id="searchBtn" type="submit" name="" value="Search" />
+</form>
+
+<script src="./js/search.js"></script>

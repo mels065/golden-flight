@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,6 @@
   rel="stylesheet"
 />
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
@@ -35,58 +34,31 @@
   } );
   </script>
 
-  <script>
-  $( function() {
-    var GetDeparting = function (req, res) {
-      $.getJSON(
-        "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/US/USD/en-US/?query=" + req.term,
-        function (data) {
-          res(data);
-        });
-    };
-
-    var selectItem = function (event, ui) {
-      $("#tags").val(ui.item.value);
-      return false;
-    }
-
-    $("#tags").autocomplete({
-      source: GetDeparting,
-      select: selectItem,
-      minLength: 2.
-      change: function() {
-        $("#tags").val("").css("display", 2);
-      }
+<script>$( function() {
+    var availableTags = [
+      "Detroit (DTW)",
+      "New York (JFK)",
+      "San Francisco (SFO)",
+      "Chicago (ORD)",
+      "Dallas (DFW)"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
     });
-  });
-  </script>
-
-  <script>
-  $( function() {
-    var GetArriving = function (req, res) {
-      $.getJSON(
-        "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/US/USD/en-US/?query=" + req.term,
-        function (data) {
-          res(data);
-        });
-    };
-
-    var selectItem = function (event, ui) {
-      $("#tags2").val(ui.item.value);
-      return false;
-    }
-
-    $("#tags2").autocomplete({
-      source: GetArriving,
-      select: selectItem,
-      minLength: 2.
-      change: function() {
-        $("#tags2").val("").css("display", 2);
-      }
+  } );</script>
+  <script>$( function() {
+    var availableTags = [
+      "Detroit (DTW)",
+      "New York (JFK)",
+      "San Francisco (SFO)",
+      "Chicago (ORD)",
+      "Dallas (DFW)"
+    ];
+    $( "#tags2" ).autocomplete({
+      source: availableTags
     });
-  });
-  </script>
-
+  } );</script>
+  
   <title>Golden Flights</title>
 </head>
 <body>
@@ -96,7 +68,6 @@
      {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-
 </body>
 
 </html>

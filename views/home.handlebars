@@ -1,20 +1,52 @@
-<header>
-    <div class="circular--portrait" ><img src="img/airplane.png" alt="airplane"></div>
-    <h1>Golden Flights</h1>
+ <header class="header-results">
+  <div class="circular--portrait"><img
+      src="img/airplane.png"
+      alt="airplane"
+    /></div>
+  <h1>Golden Flights</h1>
+  <a class="my-tickets" href="/mytickets">My Tickets</a>
   <button class="no-button" id="logout">logout</button>
 </header>
-<h2>Welcome, {{name}}!</h2>
-    <form action="" class="search-form">
-<div class="ui-widget">
-  <label for="tags">Leaving from</label>
-  <input class="departingField" id="tags">
-</div>
-<div class="ui-widget">
-  <label for="tags">Going to</label>
-  <input class="arrivingField" id="tags2">
-</div>
-<p>Departing <input type="text" id="datepicker"></p>
- <input id="searchBtn" type="submit" name="" value="Search">
-    </form>
+ <div class="container d-flex justify-content-center">
+   <h2>Please Enter Your Customer Info</h2>
+   </div>
+ 
+ <form class="container customer-info">
+    <div class="row">
+      <div class="col">
+        <p>first Name:</p><input type="text" name="" class="firstName" />
+      </div>
+      <div class="col">
+        <p>Last Name:</p><input type="text" name="" class="lastName" />
+      </div>
+       <div class="col">
+        <p>Address:</p><input type="text" name="" class="address" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>City:</p><input type="text" name="" class="city" />
+      </div>
+       <div class="col">
+        <p>State:</p><input type="text" name="" class="state" />
+      </div>
+      <div class="col">
+        <p>Postal Code:</p><input
+          type="text"
+          name=""
+          class="postalCode"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>Country:</p><input type="text" name="" class="country" />
+      </div>
+      <div class="col d-flex justify-content-center">
+        <input type="submit" name="" value="Continue">
+      </div>
+    </div>
+</form>
 
-    <script src="./js/home.js"></script>
+
+ <script src="./js/home.js"></script>

@@ -1,6 +1,6 @@
 [
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:00AM",
@@ -9,7 +9,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:00AM",
@@ -18,7 +18,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:30AM",
@@ -27,7 +27,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:45AM",
@@ -36,7 +36,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:00AM",
@@ -45,7 +45,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "7:15AM",
@@ -54,7 +54,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:30AM",
@@ -63,7 +63,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:45AM",
@@ -72,7 +72,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "9:00AM",
@@ -81,7 +81,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:15AM",
@@ -90,7 +90,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -99,7 +99,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:50AM",
@@ -108,7 +108,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:10AM",
@@ -117,7 +117,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:15AM",
@@ -126,7 +126,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "7:30AM",
@@ -135,7 +135,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:50AM",
@@ -144,7 +144,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "7:15AM",
@@ -153,7 +153,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:15AM",
@@ -162,7 +162,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "7:30AM",
@@ -171,7 +171,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "6:25AM",
@@ -180,7 +180,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:00AM",
@@ -189,7 +189,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:10AM",
@@ -198,7 +198,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -207,7 +207,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "7:45AM",
@@ -216,7 +216,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "7:00AM",
@@ -225,7 +225,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:45AM",
@@ -234,7 +234,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -243,7 +243,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:30AM",
@@ -252,7 +252,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:00AM",
@@ -261,7 +261,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "6:20AM",
@@ -270,7 +270,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -279,7 +279,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:00AM",
@@ -288,7 +288,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:00AM",
@@ -297,7 +297,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:35AM",
@@ -306,7 +306,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:30AM",
@@ -315,7 +315,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "7:50AM",
@@ -324,7 +324,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "6:15AM",
@@ -333,7 +333,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "6:15AM",
@@ -342,7 +342,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:30AM",
@@ -351,7 +351,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "6:50AM",
@@ -360,7 +360,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:10AM",
@@ -369,7 +369,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:00AM",
@@ -378,7 +378,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:10AM",
@@ -387,7 +387,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "8:15AM",
@@ -396,7 +396,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:20AM",
@@ -405,7 +405,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:15AM",
@@ -414,7 +414,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:10AM",
@@ -423,7 +423,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "8:15AM",
@@ -432,7 +432,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "10:10AM",
@@ -441,7 +441,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:15AM",
@@ -450,7 +450,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:40AM",
@@ -459,7 +459,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "8:00AM",
@@ -468,7 +468,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "10:15AM",
@@ -477,7 +477,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:30AM",
@@ -486,7 +486,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:20AM",
@@ -495,7 +495,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:30AM",
@@ -504,7 +504,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:20AM",
@@ -513,7 +513,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:25AM",
@@ -522,7 +522,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:20AM",
@@ -531,7 +531,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:30AM",
@@ -540,7 +540,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:15AM",
@@ -549,7 +549,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:15AM",
@@ -558,7 +558,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:15AM",
@@ -567,7 +567,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:20AM",
@@ -576,7 +576,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "9:25AM",
@@ -585,7 +585,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:10AM",
@@ -594,7 +594,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "10:00AM",
@@ -603,7 +603,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:10AM",
@@ -612,7 +612,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "11:00AM",
@@ -621,7 +621,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:20AM",
@@ -630,7 +630,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "10:30AM",
@@ -639,7 +639,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:15AM",
@@ -648,7 +648,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "11:10AM",
@@ -657,7 +657,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "10:10AM",
@@ -666,7 +666,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:20AM",
@@ -675,7 +675,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "10:10AM",
@@ -684,7 +684,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "9:10AM",
@@ -693,7 +693,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:25AM",
@@ -702,7 +702,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:40AM",
@@ -711,7 +711,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/12/2021",
+        "departingDate": "09/12/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:30AM",
@@ -720,7 +720,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:00AM",
@@ -729,7 +729,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:00AM",
@@ -738,7 +738,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:30AM",
@@ -747,7 +747,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:45AM",
@@ -756,7 +756,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:00AM",
@@ -765,7 +765,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "7:15AM",
@@ -774,7 +774,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:30AM",
@@ -783,7 +783,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:45AM",
@@ -792,7 +792,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "9:00AM",
@@ -801,7 +801,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:15AM",
@@ -810,7 +810,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -819,7 +819,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:50AM",
@@ -828,7 +828,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:10AM",
@@ -837,7 +837,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:15AM",
@@ -846,7 +846,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "7:30AM",
@@ -855,7 +855,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:50AM",
@@ -864,7 +864,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "7:15AM",
@@ -873,7 +873,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:15AM",
@@ -882,7 +882,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "7:30AM",
@@ -891,7 +891,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "6:25AM",
@@ -900,7 +900,7 @@
         "airliner_id": 1
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:00AM",
@@ -909,7 +909,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:10AM",
@@ -918,7 +918,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -927,7 +927,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "7:45AM",
@@ -936,7 +936,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "7:00AM",
@@ -945,7 +945,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:45AM",
@@ -954,7 +954,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -963,7 +963,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:30AM",
@@ -972,7 +972,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:00AM",
@@ -981,7 +981,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "6:20AM",
@@ -990,7 +990,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "7:30AM",
@@ -999,7 +999,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "6:00AM",
@@ -1008,7 +1008,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:00AM",
@@ -1017,7 +1017,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "7:35AM",
@@ -1026,7 +1026,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:30AM",
@@ -1035,7 +1035,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "7:50AM",
@@ -1044,7 +1044,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "6:15AM",
@@ -1053,7 +1053,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "6:15AM",
@@ -1062,7 +1062,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "6:30AM",
@@ -1071,7 +1071,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "6:50AM",
@@ -1080,7 +1080,7 @@
         "airliner_id": 2
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:10AM",
@@ -1089,7 +1089,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:00AM",
@@ -1098,7 +1098,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:10AM",
@@ -1107,7 +1107,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "8:15AM",
@@ -1116,7 +1116,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:20AM",
@@ -1125,7 +1125,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:15AM",
@@ -1134,7 +1134,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:10AM",
@@ -1143,7 +1143,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "8:15AM",
@@ -1152,7 +1152,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "10:10AM",
@@ -1161,7 +1161,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:15AM",
@@ -1170,7 +1170,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:40AM",
@@ -1179,7 +1179,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "8:00AM",
@@ -1188,7 +1188,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "10:15AM",
@@ -1197,7 +1197,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:30AM",
@@ -1206,7 +1206,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:20AM",
@@ -1215,7 +1215,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:30AM",
@@ -1224,7 +1224,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "8:20AM",
@@ -1233,7 +1233,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "8:25AM",
@@ -1242,7 +1242,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "8:20AM",
@@ -1251,7 +1251,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "8:30AM",
@@ -1260,7 +1260,7 @@
         "airliner_id": 3
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:15AM",
@@ -1269,7 +1269,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:15AM",
@@ -1278,7 +1278,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:15AM",
@@ -1287,7 +1287,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Detroit (DTW)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:20AM",
@@ -1296,7 +1296,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "9:25AM",
@@ -1305,7 +1305,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:10AM",
@@ -1314,7 +1314,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "10:00AM",
@@ -1323,7 +1323,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Chicago (ORD)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:10AM",
@@ -1332,7 +1332,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "11:00AM",
@@ -1341,7 +1341,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:20AM",
@@ -1350,7 +1350,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "10:30AM",
@@ -1359,7 +1359,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "San Francisco (SFO)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "9:15AM",
@@ -1368,7 +1368,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "11:10AM",
@@ -1377,7 +1377,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "10:10AM",
@@ -1386,7 +1386,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:20AM",
@@ -1395,7 +1395,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "New York (JFK)",
         "arrivingCity": "Dallas (DFW)",
         "takeOffTime": "10:10AM",
@@ -1404,7 +1404,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Detroit (DTW)",
         "takeOffTime": "9:10AM",
@@ -1413,7 +1413,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "Chicago (ORD)",
         "takeOffTime": "9:25AM",
@@ -1422,7 +1422,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "San Francisco (SFO)",
         "takeOffTime": "9:40AM",
@@ -1431,7 +1431,7 @@
         "airliner_id": 4
     },
     {
-        "departingDate": "9/13/2021",
+        "departingDate": "09/13/2021",
         "departingCity": "Dallas (DFW)",
         "arrivingCity": "New York (JFK)",
         "takeOffTime": "9:30AM",

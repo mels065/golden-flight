@@ -7,7 +7,7 @@
         "address": "453 Washington Ave",
         "city": "Dallas",
         "state": "Texas",
-        "postalcode": "75061",
+        "postalCode": "75061",
         "country": "United Sates of America"
     },
     {
@@ -18,7 +18,7 @@
         "address": "1013 NW 108th St",
         "city": "Seattle",
         "state": "Washington",
-        "postalcode": "98125",
+        "postalCode": "98125",
         "country": "United Sates of America"
     },
     {
@@ -29,7 +29,7 @@
         "address": "332 Cresta Vista Dr",
         "city": "San Francisco",
         "state": "California",
-        "postalcode": "94127",
+        "postalCode": "94127",
         "country": "United Sates of America"
     }
 ]
