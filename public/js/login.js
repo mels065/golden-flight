@@ -17,6 +17,36 @@ $(document).ready(function() {
     logInForm.show();
   }); 
 
+  const emailValidate = async (event) => {
+    event.preventDefault();
+
+
+      const email = document.querySelector('#email-login').value.trim();
+
+      if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        return (true);
+      } else {
+        alert(" Invalid email address entered! Please enter a valid email address. ");
+      }
+  };
+
+  const passwordValidate = async (event) => {
+    // 6 to 20 characters has to contain atleast numeric, on uppercase and one lowercase.
+    event.preventDefault();
+
+    const password = document.querySelector('#password-login').value.trim();
+    var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+    
+    if (password.match(passw))
+    {
+      alert(" Password accepted! ")
+      return true;
+    } else {
+      alert(" Please input a valid password! ")
+      return false;
+    }
+  };
+
   const loginFormHandler = async (event) => {
     event.preventDefault();
   
