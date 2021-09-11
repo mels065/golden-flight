@@ -17,7 +17,7 @@ const ticketFormHandler = async(event) => {
     // If successful, redirect the browser to the profile page
     document.location.assign('/mytickets');
   } else {
-    alert(response.statusText);
+    alert((await response.json()).message);
   }
 }
 
