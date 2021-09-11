@@ -4,8 +4,6 @@ const bcrypt = require('bcrypt');
 
 class Customer extends Model {
     async checkPassword(loginPw) {
-        console.log(loginPw);
-        console.log(this);
         return await bcrypt.compare(loginPw, this.password);
     }
 }
@@ -30,7 +28,10 @@ Customer.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [8],
+                len: {
+                    args: [8],
+                    msg: 'Password must be 8 or more characters long'
+                },
             },
         },
         firstName: {

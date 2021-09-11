@@ -5,6 +5,9 @@ const bcrypt = require('bcrypt');
 
 customerRouter.post('/register', async (req, res) => {
     try {
+        if (await Customer.findOne({ where: { email: req.body.email } })) {
+            res.status(400).json({ message: 'Email already exists' });
+        }
         const customer = await Customer.create(req.body);
 
         req.session.save(() => {
@@ -17,35 +20,30 @@ customerRouter.post('/register', async (req, res) => {
     }
 });
 
-customerRouter.post('/login', (req, res) => {
-    Customer.findOne({
+customerRouter.post('/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        const customer = await Customer.findOne({
             where: {
-                email: req.body.email
+                email
             }
-        }).then(dbCustomerData => {
-            if (!dbCustomerData) {
-                res.status(400).json({ message: 'No user with that username!' });
-                return;
-            }
-            const validPassword = dbCustomerData.checkPassword(req.body.password);
+        });
 
-            if (!validPassword) {
-                res.status(400).json({ message: 'Incorrect password!' });
-                return;
-            }
+        if (!customer ||  (customer && !(await customer.checkPassword(password)))) {
+            res.status(400).json({ message: 'Email or password were not valid' });
+        } else {
             req.session.save(() => {
 
-                req.session.customer_id = dbCustomerData.id;
-                req.session.email = dbCustomerData.email;
+                req.session.customer_id = customer.id;
+                req.session.email = customer.email;
                 req.session.logged_in = true;
 
-                res.json({ customer: dbCustomerData, message: 'You are now logged in!' });
+                res.json({ customer, message: 'You are now logged in!' });
             });
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
+        }
+    } catch (err) {
+        res.status(400).json({ message: err.message })
+    }
 });
 
 customerRouter.put('/update', async (req, res) => {
