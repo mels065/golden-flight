@@ -5,8 +5,6 @@ const ticketFormHandler = async(event) => {
   const roundtrip = document.querySelector('.roundTrip').checked;
   const order_date = document.querySelector('.ticketDate').innerHTML;
   const flight_id = event.target.dataset.flightid;
-
-  console.log(event.target.dataset);
   
   const response = await fetch('/api/ticket/book', {
     method: 'POST',
@@ -17,7 +15,7 @@ const ticketFormHandler = async(event) => {
 
   if (response.ok) {
     // If successful, redirect the browser to the profile page
-    document.location.replace('/mytickets');
+    document.location.assign('/mytickets');
   } else {
     alert(response.statusText);
   }
