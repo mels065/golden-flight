@@ -5,6 +5,9 @@ const bcrypt = require('bcrypt');
 
 customerRouter.post('/register', async (req, res) => {
     try {
+        if (await Customer.findOne({ where: { email: req.body.email } })) {
+            res.status(400).json({ message: 'Email already exists' });
+        }
         const customer = await Customer.create(req.body);
 
         req.session.save(() => {
@@ -26,9 +29,7 @@ customerRouter.post('/login', async (req, res) => {
             }
         });
 
-        console.log(await customer.checkPassword(password));
-
-        if (!customer || !(await customer.checkPassword(password))) {
+        if (!customer ||  (customer && !(await customer.checkPassword(password)))) {
             res.status(400).json({ message: 'Email or password were not valid' });
         } else {
             req.session.save(() => {

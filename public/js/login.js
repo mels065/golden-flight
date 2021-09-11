@@ -50,21 +50,27 @@ $(document).ready(function() {
   const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
-  
-    if (email && password) {
-      const response = await fetch('/api/customer/register', {
-        method: 'POST',
-        body: JSON.stringify({ email, password }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-  
-      if (response.ok) {
-        document.location.replace('/home');
+    try {
+      const email = document.querySelector('#email-signup').value.trim();
+      const password = document.querySelector('#password-signup').value.trim();
+    
+      if (email && password) {
+        const response = await fetch('/api/customer/register', {
+          method: 'POST',
+          body: JSON.stringify({ email, password }),
+          headers: { 'Content-Type': 'application/json' },
+        });
+    
+        if (response.ok) {
+          document.location.assign('/home');
+        } else {
+          alert((await response.json()).message);
+        }
       } else {
-        alert(response.statusText);
+        alert('Please provide email and password');
       }
+    } catch (err) {
+      alert(err.message);
     }
   };
 
