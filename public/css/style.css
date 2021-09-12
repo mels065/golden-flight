@@ -122,6 +122,10 @@ header h1 {
     margin-bottom: 10px;
 }
 
+.sign-up p {
+  text-align: center;
+}
+
 .login p, .sign-up p {
     color: grey;
 }
