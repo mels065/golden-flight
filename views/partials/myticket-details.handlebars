@@ -1,43 +1,59 @@
 <div class="container mytickets gx-5 gy-5">
-   <div class="row row1 gx-5">
-    <div class="col">
-      Destination: <br> {{Flight.departingCity}} to {{Flight.arrivingCity}}
+  <div class="row row1 gx-5">
+    <div class="col-sm-6 col-md-3">
+      Destination:
+      <br />
+      <strong>{{Flight.departingCity}} to {{Flight.arrivingCity}}</strong>
     </div>
-    <div class="col">
-      Name of Passenger: <br> {{Customer.firstName}}&nbsp;{{Customer.lastName}}
+    <div class="col-sm-6 col-md-3">
+      Name of Passenger:
+      <br />
+      <strong>{{Customer.firstName}}&nbsp;{{Customer.lastName}}</strong>
     </div>
-    <div class="col">
-      Departure Date: <br> {{Flight.departingDate}}
+    <div class="col-sm-6 col-md-3">
+      Departure Date:
+      <br />
+      <strong>{{Flight.departingDate}}</strong>
     </div>
-    <div class="col-2">
-      Purchase Date: <br> {{order_date}}
+    <div class="col-sm-6 col-md-3">
+      Purchase Date:
+      <br />
+      <strong>{{order_date}}</strong>
     </div>
   </div>
   <div class="row row2 gy-5">
-    <div class="col">
-      {{Flight.Airliner.name}}
+    <div class="col-sm-3 col-md-4">
+      <strong>{{Flight.Airliner.name}}</strong>
     </div>
-    <div class="col">
-      {{Flight.takeOffTime}} - {{Flight.landingTime}}
+    <div class="col-sm-3 col-md-4">
+      <strong>{{Flight.takeOffTime}} - {{Flight.landingTime}}</strong>
     </div>
-    <div class="col">
-      {{Flight.price}}
+    <div class="col-sm-3 col-md-4">
+      <strong>{{Flight.price}}</strong>
     </div>
   </div>
   <div class="row gy-5">
-    <div class="col">
-      Has Baggage:  {{baggage}}
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      Has Baggage:
+      <strong> {{baggage}}</strong>
     </div>
-    <div class="col">
-      Round trip:  {{roundtrip}}
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      Round trip:
+      <strong>{{roundtrip}}</strong>
     </div>
-    <button data-ticketid={{id}} class="col-2 cancel-flight">
+    <button
+      data-ticketid={{id}}
+      class="col-sm-12 col-md-6 col-lg-3 cancel-flight"
+    >
       Cancel Flight
     </button>
-    <a href="/api/ticket/download-itinerary/{{id}}" class="col-2 download-itinerary">
+    <a
+      href="/api/ticket/download-itinerary/{{id}}"
+      class="col-sm-12 col-md-6 col-lg-3 download-itinerary"
+    >
       Download Itinerary
     </a>
   </div>
- </div>
+</div>
 
- <script src="/js/cancel-flight.js"></script>
+<script src="/js/cancel-flight.js"></script>

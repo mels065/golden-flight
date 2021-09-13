@@ -39,7 +39,6 @@ header {
   animation-duration: 5s;
 }
 
-
 @keyframes fly {
   0% {
     transform: translate(1750px) rotate(-90deg);
@@ -73,7 +72,7 @@ header h1 {
   padding-left: 43px;
   padding-top: 3px;
   align-self: center;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
 .home-h1 {
@@ -194,23 +193,24 @@ header h1 {
   width: 100%;
   background-color: black;
   border-radius: 10px;
-} 
+}
 
-.my-tickets-dropdown, .no-button-dropdown, .search-dropdown {
+.my-tickets-dropdown,
+.no-button-dropdown,
+.search-dropdown {
   display: none;
 }
 
-.continue-button, #searchBtn, #ticket-submit {
+.continue-button,
+#searchBtn,
+#ticket-submit {
   background-color: black;
   color: var(--light-gold);
   height: 40px;
   width: 25%;
-  }
+}
 
 .search {
-  position: absolute;
-  right: 275px;
-  top: 42px;
   background: none;
   border: none;
   color: black;
@@ -259,7 +259,8 @@ h4 {
   );
 }
 
-.ui-widget, .departing {
+.ui-widget,
+.departing {
   padding: 5px;
 }
 
@@ -286,10 +287,6 @@ h4 {
   margin-top: 25px;
 }
 
-.ticket-info {
- 
-}
-
 .mytickets {
   border: 2px solid var(--dark-gold);
 }
@@ -308,44 +305,42 @@ h4 {
   .toggle-button {
     display: flex;
   }
- 
-  .my-tickets, .no-button, .search {
-   display: none;
-  
+
+  .my-tickets,
+  .no-button,
+  .search {
+    display: none;
   }
- 
+
   .navbar-links {
-  flex-direction: column;
+    flex-direction: column;
     align-items: flex-start;
   }
 
- /* .navbar-links ul {
+  /* .navbar-links ul {
     width: 100%;
     flex-direction: column;
   }*/
 
- 
+  .my-tickets-dropdown.active,
+  .no-button-dropdown.active,
+  .search-dropdown.active {
+    display: inline-block;
+    border: none;
+    color: var(--light-gold);
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+  }
 
-.my-tickets-dropdown.active, .no-button-dropdown.active, .search-dropdown.active {
-  display: inline-block;
-  border: none;
-  color: var(--light-gold);
-  background-color: black;
-  width: 100%;
-  text-align: center;
-  padding-top: 2px;
-}
+  .my-tickets-dropdown.active:hover,
+  .no-button-dropdown.active:hover,
+  .search-dropdown.active:hover {
+    color: var(--dark-gold);
+  }
 
-.my-tickets-dropdown.active:hover, .no-button-dropdown.active:hover, .search-dropdown.active:hover {
-  color: var(--dark-gold);
-}
-
-.circular--portrait img {
-  width: 5rem;
-}
-
-}
-
-@media (max-width: 481px) {
- 
+  .circular--portrait img {
+    width: 5rem;
+  }
 }

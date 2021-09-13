@@ -1,12 +1,26 @@
-<header>
-  <div class="circular--portrait"><img
-      src="/img/airplane.png"
-      alt="airplane"
-    /></div>
-  <h1>Golden Flights</h1>
-  <a class="search" href="/search">Search</a>
-  <button class="no-button" id="logout">logout</button>
-</header>
+  <header class="header-results container-fluid d-flex justify-content-between">
+    <div class="row gx-5">
+    <div class="col-3 circular--portrait"><img
+        class="home-plane" src="img/airplane.png"
+        alt="airplane"
+      /></div>
+    <h1 class="col home-h1">Golden Flights</h1>
+    </div>
+     <a href="" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+    <div class="row m-3 d-flex align-items-center navbar-links">
+      <a class="col search" href="/search">Search</a>
+      <button class="col no-button" id="logout">logout</button>
+    </div>
+    
+  </header>
+  <div class="container d-flex flex-column navbar-links-dropdown">
+      <a class="col-12 search-dropdown" href="/search">Search</a>
+     <button class="col-12 no-button-dropdown" id="logout-dropdown">logout</button>
+    </div>
  <div class="container d-flex justify-content-center">
    <h2 class="flight-information"><strong>My Tickets</h2>
    </div>
@@ -14,6 +28,8 @@
 {{#each tickets as |ticket|}}
 {{> myticket-details}}
 {{/each}}
+
+<script src="/js/mytickets.js"></script>
 
 
 
