@@ -196,16 +196,16 @@ header h1 {
   border-radius: 10px;
 } 
 
-.my-tickets-dropdown, .no-button-dropdown {
+.my-tickets-dropdown, .no-button-dropdown, .search-dropdown {
   display: none;
 }
 
-.continue-button {
-  background-color: var(--light-gold);
-  color: black;
+.continue-button, #searchBtn {
+  background-color: black;
+  color: var(--light-gold);
   height: 40px;
-  
-}
+  width: 25%;
+  }
 
 .search {
   position: absolute;
@@ -224,11 +224,10 @@ header h1 {
 
 .container h2,
 h4 {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   color: var(--dark-gold);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  margin-top: 15px;
 }
 
 .flight-results {
@@ -240,10 +239,22 @@ h4 {
 
 .search-form {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -10%);
   padding: 20px;
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+  background: repeating-linear-gradient(
+    var(--dark-gold),
+    var(--light-gold),
+    var(--dark-gold)
+  );
+}
+
+.ui-widget, .departing {
+  padding: 5px;
 }
 
 .flight-cities {
@@ -296,7 +307,7 @@ h4 {
     display: flex;
   }
  
-  .my-tickets, .no-button {
+  .my-tickets, .no-button, .search {
    display: none;
   
   }
@@ -313,7 +324,7 @@ h4 {
 
  
 
-.my-tickets-dropdown.active, .no-button-dropdown.active {
+.my-tickets-dropdown.active, .no-button-dropdown.active, .search-dropdown.active {
   display: inline-block;
   border: none;
   color: var(--light-gold);
@@ -323,7 +334,7 @@ h4 {
   padding-top: 2px;
 }
 
-.my-tickets-dropdown.active:hover, .no-button-dropdown.active:hover {
+.my-tickets-dropdown.active:hover, .no-button-dropdown.active:hover, .search-dropdown.active:hover {
   color: var(--dark-gold);
 }
 
