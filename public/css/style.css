@@ -18,8 +18,14 @@ header {
   );
 }
 
+.header-login {
+  padding: 5px;
+  display: flex;
+  padding: 15px;
+}
+
 .header-results {
-  
+  margin-bottom: 25px;
 }
 
 .logo {
@@ -32,6 +38,7 @@ header {
   animation-name: fly;
   animation-duration: 5s;
 }
+
 
 @keyframes fly {
   0% {
@@ -48,17 +55,35 @@ header {
   }
 }
 
-.circular--portrait img {
-  width: 7rem;
+.login-plane {
+  width: 100%;
+  height: auto;
+}
+
+.home-plane {
+  width: 6.3rem;
 }
 
 header h1 {
+  font-weight: 800;
+  font-style: italic;
+  display: inline-block;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  padding-left: 43px;
+  padding-top: 3px;
+  align-self: center;
+  letter-spacing: .5rem;
+}
+
+.home-h1 {
   font-weight: 800;
   font-style: italic;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   align-self: center;
   letter-spacing: 0.5rem;
+  display: inline-block;
 }
 
 .bg-image,
@@ -85,9 +110,9 @@ header h1 {
   color: white;
 }
 
-.login input[type="text"],
+.login input[type="email"],
 .login input[type="password"],
-.sign-up input[type="text"],
+.sign-up input[type="email"],
 .sign-up input[type="password"] {
   border: 0;
   background: none;
