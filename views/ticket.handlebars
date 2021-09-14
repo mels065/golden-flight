@@ -1,32 +1,51 @@
-<header>
-  <div class="circular--portrait"><img
-      src="/img/airplane.png"
-      alt="airplane"
-    /></div>
-  <h1>Golden Flights</h1>
-  <a class="search" href="/search">Search</a>
-  <a class="my-tickets" href="/mytickets">My Tickets</a>
-  <button class="no-button" id="logout">logout</button>
-</header>
+  <header class="header-results container-fluid d-flex justify-content-between">
+    <div class="row gx-5">
+    <div class="col-3 circular--portrait"><img
+        class="home-plane" src="/img/airplane.png"
+        alt="airplane"
+      /></div>
+    <h1 class="col home-h1">Golden Flights</h1>
+    </div>
+     <a href="" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+    <div class="row m-3 d-flex align-items-center navbar-links">
+      <a class="col search" href="/search">Search</a>
+      <a class="col text-nowrap my-tickets" href="/mytickets">My Tickets</a>
+      <button class="col no-button" id="logout">logout</button>
+    </div>
+    
+  </header>
+  <div class="container d-flex flex-column navbar-links-dropdown">
+      <a class="col-12 search-dropdown" href="/search">Search</a>
+      <a class="col-12 text-nowrap my-tickets-dropdown" href="/mytickets">My Tickets</a>
+      <button class="col-12 no-button-dropdown" id="logout-dropdown">logout</button>
+    </div>
  <div class="container d-flex justify-content-center">
-   <h2 class="flight-information"><strong>Put in information for your flight</h2>
+   <h2 class="flight-information"><strong>Put in your ticket information</h2>
    </div>
 
-<div class="container px-4">
+<div class="container px-4 flight-results">
   <div class="row results">
-    <div class="col">
+    <div class="col-sm-6 col-md-3">
       {{flight.Airliner.name}}
     </div>
-    <div class="col">
+    <div class="col-sm-6 col-md-3">
       {{flight.takeOffTime}} - {{flight.landingTime}}
     </div>
-    <div class="col">
+    <div class="col-sm-6 col-md-3">
       {{flight.price}}
+    </div>
+    <div class="col-sm-6 col-md-3 ticketDate">
+     {{format_date}}
     </div>
   </div>
  </div>
 
-<form data-flightid="{{flight.id}}" class="ticket-info" >
+<form data-flightid="{{flight.id}}" class="ticket-info container" >
+  <div class="row">
  <div class="form-check">
   <input class="form-check-input roundTrip" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
@@ -39,8 +58,8 @@
     Check if you have baggage.
   </label>
 </div>
-<p class="ticketDate">{{format_date}}</p>
-<input type="submit" name="" id="">
+<input type="submit" name="" id="ticket-submit">
+</div>
 </form>
 
 <script src="/js/ticket.js"></script>

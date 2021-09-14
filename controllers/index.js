@@ -151,17 +151,6 @@ router.get('/home', withAuth, async (req, res) => {
     }
   }); 
 
- /* router.get('/mytickets', (req, res) => {
-
-    res.render(
-      'mytickets',
-      {
-        logged_in: req.session.logged_in
-      }
-    );
-});
-*/
-
 
 module.exports = router;
 

@@ -1,53 +1,75 @@
- <header class="header-results">
-  <div class="circular--portrait"><img
-      src="img/airplane.png"
-      alt="airplane"
-    /></div>
-  <h1>Golden Flights</h1>
-  <a class="my-tickets" href="/mytickets">My Tickets</a>
-  <button class="no-button" id="logout">logout</button>
+<header class="header-results container-fluid d-flex justify-content-between">
+  <div class="row gx-5">
+    <div class="col-3 circular--portrait"><img
+        class="home-plane"
+        src="img/airplane.png"
+        alt="airplane"
+      /></div>
+    <h1 class="col home-h1">Golden Flights</h1>
+  </div>
+  <a href="" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="row m-3 d-flex align-items-center navbar-links">
+    <a class="col text-nowrap my-tickets" href="/mytickets">My Tickets</a>
+    <button class="col no-button" id="logout">logout</button>
+  </div>
+
 </header>
- <div class="container d-flex justify-content-center">
-   <h2>Please Enter Your Customer Info</h2>
-   </div>
- 
- <form class="container customer-info">
-    <div class="row">
-      <div class="col">
-        <p>first Name:</p><input type="text" name="" class="firstName" />
-      </div>
-      <div class="col">
-        <p>Last Name:</p><input type="text" name="" class="lastName" />
-      </div>
-       <div class="col">
-        <p>Address:</p><input type="text" name="" class="address" />
-      </div>
+<div class="container d-flex flex-column navbar-links-dropdown">
+
+  <a class="col-12 text-nowrap my-tickets-dropdown" href="/mytickets">My Tickets</a>
+  <button class="col-12 no-button-dropdown" id="logout-dropdown">logout</button>
+</div>
+
+<div class="container d-flex justify-content-center">
+  <h2>Please Enter Your Customer Info</h2>
+</div>
+
+<form class="container customer-info">
+  <div class="row">
+    <div class="col">
+      <p>first Name:</p><input type="text" name="" class="firstName" />
     </div>
-    <div class="row">
-      <div class="col">
-        <p>City:</p><input type="text" name="" class="city" />
-      </div>
-       <div class="col">
-        <p>State:</p><input type="text" name="" class="state" pattern="[A-Z]{2}" />
-      </div>
-      <div class="col">
-        <p>Postal Code:</p><input
-          type="text"
-          name=""
-          class="postalCode"
-          pattern="[0-9]{5}"
-        />
-      </div>
+    <div class="col">
+      <p>Last Name:</p><input type="text" name="" class="lastName" />
     </div>
-    <div class="row">
-      <div class="col">
-        <p>Country:</p><input type="text" name="" class="country" />
-      </div>
-      <div class="col d-flex justify-content-center">
-        <input type="submit" name="" value="Continue">
-      </div>
+    <div class="col">
+      <p>Address:</p><input type="text" name="" class="address" />
     </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>City:</p><input type="text" name="" class="city" />
+    </div>
+    <div class="col">
+      <p>State:</p><input
+        type="text"
+        name=""
+        class="state"
+        pattern="[A-Z]{2}"
+      />
+    </div>
+    <div class="col">
+      <p>Postal Code:</p><input
+        type="text"
+        name=""
+        class="postalCode"
+        pattern="[0-9]{5}"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>Country:</p><input type="text" name="" class="country" />
+    </div>
+
+  </div>
+  <div class="row"><div class="col d-flex justify-content-center">
+      <input class="continue-button" type="submit" name="" value="Continue" />
+    </div></div>
 </form>
 
-
- <script src="./js/home.js"></script>
+<script src="./js/home.js"></script>
