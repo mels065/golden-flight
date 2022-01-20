@@ -27,7 +27,7 @@
  
 
 ### Installation Intstructions
- Clone the project repo and then navigate to the root of the project in your terminal. Enter 'npm install' to install all the required dependencies. Enter 'npm run seeds' to seed the dummy data. Enter 'npm run start' to start the server. Navigate to localhost:3001 in your web browser the launch the website. Please keep in mind that we used dummy data, so when you pick your departing date it must be either 9/12/21 or 9/13/21 to receive flight information.
+ Clone the project repo and then navigate to the root of the project in your terminal. Enter 'npm install' to install all the required dependencies. Enter 'npm run seeds' to seed the dummy data. Enter 'npm run start' to start the server. Navigate to localhost:3001 in your web browser to launch the website. Please keep in mind that we used dummy data, so when you pick your departing date it must be either 9/12/21 or 9/13/21 to receive flight information.
 
 ### Built with
 - [Express-Session](https://www.npmjs.com/package/express-session) - Session middleware
