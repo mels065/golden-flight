@@ -4,7 +4,7 @@
 
 # Golden Flights
  
-  This is an application for booking flights. Our goal was to create a platform where you could find flights on the fly in a sleek and elegant way. The project follows the MVC framwork featuring express-session for authentication, Handlebars.js as the templating language, sequelize as its ORM, and pdfmake as the unique technology of our project.
+  This is an application for booking flights. Our goal was to create a platform where you could find flights on the fly in a sleek and elegant way. The project follows the MVC framework featuring express-session for authentication, Handlebars.js as the templating language, Sequelize as its ORM, and PDFMake as the unique technology of our project.
    
   ## Visit live website [Here](https://powerful-eyrie-53621.herokuapp.com/)
    
